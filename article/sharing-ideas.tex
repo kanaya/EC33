@@ -1,14 +1,13 @@
 %%
-%% Œ¤‹†•ñ—pƒXƒCƒbƒ`
+%% ç ”ç©¶å ±å‘Šç”¨ã‚¹ã‚¤ãƒƒãƒ
 %% [techrep]
 %%
-%% ‰¢•¶•\‹L–³‚µ‚ÌƒXƒCƒbƒ`(etitle,jkeyword,eabstract,ekeyword‚Í”CˆÓ)
+%% æ¬§æ–‡è¡¨è¨˜ç„¡ã—ã®ã‚¹ã‚¤ãƒƒãƒ(etitle,jkeyword,eabstract,ekeywordã¯ä»»æ„)
 %% [noauthor]
 %%
 
 %\documentclass[submit,techreq]{ipsj}
 \documentclass[submit,techreq,noauthor]{ipsj}
-
 
 \usepackage[dvips]{graphicx}
 \usepackage{latexsym}
@@ -17,1053 +16,219 @@
 \def\endUnderline{\vphantom{y}\egroup\smash{\underline{\box0}}\\}
 \def\|{\verb|}
 
-\setcounter{Šª”}{0}%vol53=2012
-\setcounter{†”}{0}
-\setcounter{page}{1}
+\newcommand{\TED}{\textsf{TED}}
+\newcommand{\TEDx}{\TED${}^{\textsf{x}}$}
+\newcommand{\TEDxTokyo}{\TEDx\textsf{Tokyo}}
+\newcommand{\TEDxKyoto}{\TEDx\textsf{Kyoto}}
 
+\setcounter{å·»æ•°}{0}%vol53=2012
+\setcounter{å·æ•°}{0}
+\setcounter{page}{1}
 
 \begin{document}
 
-
-\title{ƒAƒCƒfƒBƒA‚Ì‹¤—Lè’i‚Æ‚µ‚Ä‚ÌƒGƒ“ƒ^ƒeƒCƒƒ“ƒg}
+\title{ã‚¢ã‚¤ãƒ‡ã‚£ã‚¢ã®å…±æœ‰æ‰‹æ®µã¨ã—ã¦ã®ã‚¨ãƒ³ã‚¿ãƒ†ã‚¤ãƒ¡ãƒ³ãƒˆ}
 
 %\etitle{How to Prepare Your Paper for IPSJ Journal \\
 %(version 2012/10/12)}
 
-\affiliate{OsakaU}{‘åã‘åŠw\\
+\affiliate{OsakaU}{å¤§é˜ªå¤§å­¦\\
 Osaka University, Suita, Osaka 565-0871, Japan}
 
-\affiliate{KUFS}{‹“sŠO‘Œê‘åŠw\\
+\affiliate{KUFS}{äº¬éƒ½å¤–å›½èªå¤§å­¦\\
 Kyoto University of Foreign Studies, Kyoto 615-8558, Japan}
 
-\author{‹à’J ˆê˜N}{Ichiroh Kanaya}{OsakaU}[kanaya@pineapple.cc]
-\author{ƒWƒFƒC ƒNƒ‰ƒp[ƒL}{Jay Klaphake}{KUFS}
+\author{é‡‘è°· ä¸€æœ—}{Ichiroh Kanaya}{OsakaU}[kanaya@pineapple.cc]
+\author{ã‚¸ã‚§ã‚¤ ã‚¯ãƒ©ãƒ‘ãƒ¼ã‚­}{Jay Klaphake}{KUFS}
 
 \begin{abstract}
-Œš’z‰ÆƒŠƒ`ƒƒ[ƒhEƒ\ƒEƒ‹Eƒ[ƒ}ƒ“‚Í1976”N‚Éuî•ñƒA[ƒLƒeƒNƒ`ƒƒv‚Æ‚¢‚¤Œ¾—t‚ğì‚èC
-î•ñ‚É‚¨‚¯‚éuƒA[ƒLƒeƒNƒ`ƒƒv‚Ì•K—v«‚ğ‘i‚¦‚½D”Ş‚ª1984”N‚Éİ—§‚µ‚½”ñ‰c—˜‚Ì
-ƒJƒ“ƒtƒ@ƒŒƒ“ƒX TED (Technology, Entertainment, Design) ‚Í”Ş‚Ìî•ñƒA[ƒLƒeƒNƒ`ƒƒ‚Ì
-ŠT”O‚ğÅ‚à‚æ‚­•\‚µ‚½—á‚Å‚ ‚éDTEDƒJƒ“ƒtƒ@ƒŒƒ“ƒX‚ÍŒ³XŠwpCƒGƒ“ƒ^ƒeƒCƒƒ“ƒgC
-ƒfƒUƒCƒ“•ª–ì‚ÌŒ¤‹†Ò‚ªƒAƒCƒfƒBƒA‚ğ‹¤—L‚·‚éê‚Å‚ ‚Á‚½‚ªCŒ»İ‚Í•ª–ì‚ği‚ç‚¸C
-‚Ü‚½‚»‚ÌƒvƒŒƒ[ƒ“ƒe[ƒVƒ‡ƒ“ƒtƒH[ƒ}ƒbƒg‚ğTEDx‚Æ‚µ‚ÄŠO•”‚Éƒ‰ƒCƒZƒ“ƒX‚·‚é‚±‚Æ‚ÅC
-L‚­Ğ‰ï“I‰e‹¿‚ğ—^‚¦‚Ä‚¢‚éD–{•ñ‚Å‚ÍCTEDƒXƒ^ƒCƒ‹‚ÆŒÄ‚Î‚ê‚éƒ[ƒ}ƒ“‚ÌİŒv‚µ‚½
-î•ñ‹¤—L‚Ì‚½‚ß‚ÌƒA[ƒLƒeƒNƒ`ƒƒ‚ğˆê—á‚Æ‚µ‚ÄCƒAƒCƒfƒBƒA‚Ì‹¤—Lè’i‚Æ‚µ‚Ä‚Ì
-ƒGƒ“ƒ^ƒeƒCƒƒ“ƒg‚Ì‰Â”\«‚ğ’T‚éD
+å»ºç¯‰å®¶ãƒªãƒãƒ£ãƒ¼ãƒ‰ãƒ»ã‚½ã‚¦ãƒ«ãƒ»ãƒ¯ãƒ¼ãƒãƒ³ã¯1976å¹´ã«ã€Œæƒ…å ±ã‚¢ãƒ¼ã‚­ãƒ†ã‚¯ãƒãƒ£ã€ã¨ã„ã†è¨€è‘‰ã‚’ä½œã‚Šï¼Œ
+æƒ…å ±ã«ãŠã‘ã‚‹ã€Œã‚¢ãƒ¼ã‚­ãƒ†ã‚¯ãƒãƒ£ã€ã®å¿…è¦æ€§ã‚’è¨´ãˆãŸï¼
+å½¼ãŒ1984å¹´ã«è¨­ç«‹ã—ãŸéå–¶åˆ©ã®ã‚«ãƒ³ãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ \TED\ (Technology, Entertainment, Design) ã¯
+å½¼ã®æƒ…å ±ã‚¢ãƒ¼ã‚­ãƒ†ã‚¯ãƒãƒ£ã®æ¦‚å¿µã‚’æœ€ã‚‚ã‚ˆãè¡¨ã—ãŸä¾‹ã§ã‚ã‚‹ï¼
+\TED ã‚«ãƒ³ãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ã¯å…ƒã€…å­¦è¡“ï¼Œã‚¨ãƒ³ã‚¿ãƒ†ã‚¤ãƒ¡ãƒ³ãƒˆï¼Œãƒ‡ã‚¶ã‚¤ãƒ³åˆ†é‡ã®ç ”ç©¶è€…ãŒã‚¢ã‚¤ãƒ‡ã‚£ã‚¢ã‚’å…±æœ‰ã™ã‚‹å ´ã§ã‚ã£ãŸãŒï¼Œ
+ç¾åœ¨ã¯åˆ†é‡ã‚’çµã‚‰ãšï¼Œã¾ãŸãã®ãƒ—ãƒ¬ã‚¼ãƒ³ãƒ†ãƒ¼ã‚·ãƒ§ãƒ³ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã‚’ \TEDx ã¨ã—ã¦å¤–éƒ¨ã«ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã™ã‚‹ã“ã¨ã§ï¼Œ
+åºƒãç¤¾ä¼šçš„å½±éŸ¿ã‚’ä¸ãˆã¦ã„ã‚‹ï¼æœ¬å ±å‘Šã§ã¯ï¼Œ\TED ã‚¹ã‚¿ã‚¤ãƒ«ã¨å‘¼ã°ã‚Œã‚‹ãƒ¯ãƒ¼ãƒãƒ³ã®è¨­è¨ˆã—ãŸæƒ…å ±å…±æœ‰ã®ãŸã‚ã®
+ã‚¢ãƒ¼ã‚­ãƒ†ã‚¯ãƒãƒ£ã‚’ä¸€ä¾‹ã¨ã—ã¦ï¼Œã‚¢ã‚¤ãƒ‡ã‚£ã‚¢ã®å…±æœ‰æ‰‹æ®µã¨ã—ã¦ã®ã‚¨ãƒ³ã‚¿ãƒ†ã‚¤ãƒ¡ãƒ³ãƒˆã®å¯èƒ½æ€§ã‚’æ¢ã‚‹ï¼
 \end{abstract}
 
-
-%\begin{jkeyword}
-%î•ñˆ—Šw‰ï˜_•¶ƒWƒƒ[ƒiƒ‹C\LaTeXCƒXƒ^ƒCƒ‹ƒtƒ@ƒCƒ‹C‚×‚©‚ç‚¸W
-%\end{jkeyword}
-%
-%\begin{eabstract}
-%This document is a guide to prepare a draft for submitting to IPSJ
-%Journal, and the final camera-ready manuscript of a paper to appear in
-%IPSJ Journal, using {\LaTeX} and special style files.  Since this
-%document itself is produced with the style files, it will help you to
-%refer its source file which is distributed with the style files.
-%\end{eabstract}
-%
-%\begin{ekeyword}
-%IPSJ Journal, \LaTeX, style files, ``Dos and Dont's'' list
-%\end{ekeyword}
+\begin{jkeyword}
+555ã‚«ãƒ³ãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ï¼Œ\TED ã‚«ãƒ³ãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ï¼Œã‚¢ã‚¤ãƒ‡ã‚£ã‚¢å…±æœ‰ï¼Œã‚¨ãƒ³ã‚¿ãƒ†ã‚¤ãƒ¡ãƒ³ãƒˆï¼Œãƒ—ãƒ¬ã‚¼ãƒ³ãƒ†ãƒ¼ã‚·ãƒ§ãƒ³å½¢å¼ï¼Œ
+æƒ…å ±ã‚¢ãƒ¼ã‚­ãƒ†ã‚¯ãƒãƒ£
+\end{jkeyword}
 
 \maketitle
 
-%1
-\section{‚Í‚¶‚ß‚É}
+\section{ã¯ã˜ã‚ã«}
 
-î•ñˆ—Šw‰ï‚Å‚ÍCŠîŠ²˜_•¶‚Æ‚µ‚Ä˜_•¶ƒWƒƒ[ƒiƒ‹‚Ì”­s‚ğs‚Á‚Ä‚¢‚éD‚±
-‚ê‚Ü‚Å˜_•¶ƒWƒƒ[ƒiƒ‹•ÒWˆÏˆõ‰ï‚Å‚ÍC˜_•¶ƒWƒƒ[ƒiƒ‹‚Ì˜_•¶ŒfÚ‚ÌƒtƒH[
-ƒ}ƒbƒg‚Æ‚µ‚ÄA4‰¡Œ^2’i‘g‚ğÌ—p‚µ‚Ä‚«‚½‚ªC‰ïˆõ‚©‚ç‚Ì‘½‚­‚Ì—v–]‚ÉŠî‚Ã‚«C
-A4cŒ^2’i‘g‚É•ÏX‚·‚é‚±‚Æ‚É‚µ‚½D‚Ü‚½C‚±‚ê‚Ü‚Å‚Í“Še‚ÆŒfÚ‚ÌŒ`®‚ª
-ˆÙ‚È‚Á‚Ä‚¢‚½‚ªC¡‰ñ‚ÌƒtƒH[ƒ}ƒbƒg•ÏX‚É‡‚í‚¹‚ÄC“Še‚àŒfÚ‚Æ“¯—l‚Ì
-A4cŒ^2’i‘g‚Åó‚¯•t‚¯‚é‚±‚Æ‚É‚µ‚½D
+% å•é¡Œã®å®šç¾©
 
+æƒ…å ±ã«æ§‹é€ ã‚’ä¸ãˆæƒ…å ±ã‚’ç†è§£ã—ã‚„ã™ãã™ã‚‹ç ”ç©¶ã«ã¯é•·ã„æ­´å²ãŒã‚ã‚Šï¼Œ
+ãã‚Œã¯å°‘ãªãã¨ã‚‚ç´€å…ƒå‰335å¹´ã«ã‚¢ãƒªã‚¹ãƒˆãƒ†ãƒ¬ã‚¹ã«ã‚ˆã£ã¦æ›¸ã‹ã‚ŒãŸã€Œè©©å­¦ã€\cite{a}ã«ã¾ã§é¡ã‚‹ï¼
 
-‚±‚ê‚É”º‚¢C\LaTeX ‚ÌƒXƒ^ƒCƒ‹ƒtƒ@ƒCƒ‹‚àV‚µ‚¢‚à‚Ì‚É•ÏX‚µ‚½D–{e‚Å‚ÍC
-‚Ü‚¸‚»‚ÌƒXƒ^ƒCƒ‹ƒtƒ@ƒCƒ‹‚ğ—p‚¢‚½˜_•¶‚ÌƒtƒH[ƒ}ƒbƒg‚ÉŠÖ‚µ‚Äq‚×‚éDV‚½‚È
-ƒXƒ^ƒCƒ‹ƒtƒ@ƒCƒ‹‚Å‚ÍC‹É—Í“Á•Ê‚ÈƒRƒ}ƒ“ƒh‚Íg‚í‚¸‚ÉC•W€“I‚È \LaTeX ‚ÌƒX
-ƒ^ƒCƒ‹‚ğ“¥P‚µ‚Ä‚¢‚éD˜_•¶ƒtƒH[ƒ}ƒbƒg‚ÉŠÖ‚µ‚Ä‚ÍC\ref{sec:format}~Í‚Å
-Œãq‚·‚éwj‚É]‚Á‚Ä’¸‚­‚ªC‚»‚±‚É‹K’è‚³‚ê‚Ä‚¢‚é‚±‚ÆˆÈŠO‚Í•W€“I‚È\LaTeX 
-‚ÌƒRƒ}ƒ“ƒh‚ğ‚»‚Ì‚Ü‚Üg‚¤‚±‚Æ‚ª‚Å‚«‚éD–{e‚ÍC‚»‚ÌƒXƒ^ƒCƒ‹ƒtƒ@ƒCƒ‹‚ğÀÛ
-‚Ég‚Á‚Ä‚¢‚é‚Ì‚ÅC˜_•¶·•M‚ÌÛ‚ÉQl‚É‚³‚ê‚½‚¢D
+ä¸€æ–¹ã§ï¼Œã‚µã‚¤ã‚¨ãƒ³ã‚¹ã¨ãƒ†ã‚¯ãƒãƒ­ã‚¸ãƒ¼ã¯äººé¡å…±æœ‰ã®è²¡ç”£ã§ã‚ã‚‹ãŒï¼Œãã®çŸ¥è¦‹ã«æ§‹é€ ã‚’ä¸ãˆï¼Œ
+æƒ…å ±ã‚’å…±æœ‰ã™ã‚‹ã“ã¨ã¯ã¯å¿…ãšã—ã‚‚ç°¡å˜ã§ã¯ãªã„ï¼
+ã‚µã‚¤ã‚¨ãƒ³ã‚¹ï¼Œãƒ†ã‚¯ãƒãƒ­ã‚¸ãƒ¼ã¯æ•°å­¦ã¨ã„ã†é«˜åº¦ãªæŠ½è±¡åº¦ã¨æ­£ç¢ºæ€§ã‚’æŒã¤é“å…·ã‚’é§†ä½¿ã™ã‚‹ãŸã‚ï¼Œ
+ä»–ã®å­¦å•åˆ†é‡ã¨æ¯”è¼ƒã—ã¦ã‚‚ä¸€èˆ¬ã«ã€Œæ•·å±…ãŒé«˜ã„ã€ã‹ã‚‰ã§ã‚ã‚‹ï¼
 
+å­¦å•ï¼Œã¨ã‚Šã‚ã‘ã‚µã‚¤ã‚¨ãƒ³ã‚¹ã‚„ãƒ†ã‚¯ãƒãƒ­ã‚¸ãƒ¼ã«é–¢ã™ã‚‹çŸ¥è¦‹ã®å…±æœ‰ã¯äººé¡ã®æŒç¶šçš„ç™ºå±•ã®ãŸã‚ã«ç‰¹ã«é‡è¦ã§ã‚ã‚Šï¼Œ
+ãã®è©¦ã¿ã¯å­¦ä¼šã‚„æ•™è‚²æ©Ÿé–¢ãªã©ã«ã‚ˆã£ã¦ç„¡æ•°ã«è¡Œã‚ã‚Œã¦ã„ã‚‹ï¼
+è¿‘å¹´ã®ã‚¨ãƒ‡ãƒ¥ãƒ†ã‚¤ãƒ¡ãƒ³ãƒˆ (edutainment) ã‚„ ``Playful Learning'' ã¯ç‰¹ã«å­ä¾›å‘ã‘æ•™è‚²ã‚’å¿µé ­ã«ç½®ã„ãŸ
+æ´»å‹•ã§ã‚ã‚‹ãŒï¼Œãã‚Œã‚‰ã¯å­ä¾›ã®ã¿ãªã‚‰ãšä¸€èˆ¬ç¤¾ä¼šäººã‚„å°‚é–€ä»¥å¤–ã®ç ”ç©¶è€…ã«ã‚‚ãã®ååˆ†è¦ªã—ã¾ã‚Œã¦ã„ã‚‹ï¼\cite{nu}
 
-\footnotetext{–{•¶‚ÍÀÛ‚É‚Í˜_•¶ƒWƒƒ[ƒiƒ‹•ÒWˆÏˆõ‰ï‚Åì¬‚µ‚½‚à‚Ì‚Å‚ ‚éD}
+% Passion Based Learning
 
-‚Ü‚½C˜_•¶ƒWƒƒ[ƒiƒ‹•ÒWˆÏˆõ‰ï‚Å‚ÍC˜_•¶‚Ì·•M‚·‚éÛ‚ÉC’˜Ò‚ª‚·‚é‚×‚«
-‚±‚ÆC‚·‚é‚×‚«‚Å‚È‚¢‚±‚Æ‚ğu‚×‚©‚ç‚¸Wv‚Æ‚µ‚Ä‚Ü‚Æ‚ß‚½D–{e‚ÌŒã”¼‚ÉC˜_
-•¶‚Ì“à—e‚ÉŠÖ‚·‚éwj‚É‚È‚é‚æ‚¤‚ÉCu‚×‚©‚ç‚¸Wv‚Ì“à—e‚ğƒ`ƒFƒbƒNƒŠƒXƒg‚Æ
-‚µ‚Ä‚Â‚¯‚Ä‚¢‚é‚Ì‚ÅC“Še‚·‚é‘O‚Ì“à—e‚Ìƒ`ƒFƒbƒN‚É—˜—p‚³‚ê‚½‚¢D
+% ç‹ç«‹å”ä¼š 
 
-%2
-\section{“Še‚Ì—¬‚ê}
+æœ¬å ±å‘Šã¯ï¼Œç‰¹ã«è¿‘å¹´ã®ã‚µã‚¤ã‚¨ãƒ³ã‚¹ï¼Œãƒ†ã‚¯ãƒãƒ­ã‚¸ãƒ¼åˆ†é‡ã®çŸ¥è¦‹ã‚’ä¸€èˆ¬ã«å…±æœ‰ã™ã‚‹ãŸã‚ã®æ‰‹æ®µã‚’ï¼Œ
+ãã®ç›®çš„ã«ãŠã„ã¦æˆåŠŸã—ã¤ã¤ã‚ã‚‹ \TED ã‚«ãƒ³ãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ãŠã‚ˆã³ \TEDx ã‚«ãƒ³ãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ã‚’å†…å´ã‹ã‚‰ä¿¯ç°ã™ã‚‹ã“ã¨ã§ï¼Œ
+å…±æœ‰ã—ã‚ˆã†ã¨ã™ã‚‹ã‚‚ã®ã§ã‚ã‚‹ï¼
 
-%2.1
-\subsection{€”õ}
 
-î•ñˆ—Šw‰ï˜_•¶ƒWƒƒ[ƒiƒ‹‚Ì \LaTeX ƒXƒ^ƒCƒ‹ƒtƒ@ƒCƒ‹‚ğŠÜ‚Ş˜_•¶·•MƒLƒb
-ƒg‚Í
-\begin{quote}
-\small
-\|http://www.ipsj.or.jp/jip/submit/style.html|
-\end{quote}
-‚©‚çƒ_ƒEƒ“ƒ[ƒh‚·‚é‚±‚Æ‚ª‚Å‚«‚éD˜_•¶·•MƒLƒbƒg‚ÍˆÈ‰º‚Ìƒtƒ@ƒCƒ‹‚ğŠÜ‚ñ‚Å
-‚¢‚éD
-\begin{enumerate}
-\item \|ipsj.cls      |: ÅIŒ´e—pƒXƒ^ƒCƒ‹ƒtƒ@ƒCƒ‹
-\item \|ipsjdraft.sty |: “Še—pƒXƒ^ƒCƒ‹i¸“Ç—pj
-\item \|ipsjpref.sty  |: ˜•¶—pƒXƒ^ƒCƒ‹
-\item \|jsample.tex   |: –{e‚Ìƒ\[ƒXƒtƒ@ƒCƒ‹
-\item \|esample.tex   |: ‰p•¶ƒTƒ“ƒvƒ‹‚Ìƒ\[ƒXƒtƒ@ƒCƒ‹
-\item \|ipsjsort.bst  |: jBibTEX ƒXƒ^ƒCƒ‹i’˜Ò–¼‡j
-\item \|ipsjunsrt.bst |: jBibTEX ƒXƒ^ƒCƒ‹ioŒ»‡j
-\item \|bibsample.bib |: •¶Œ£ƒŠƒXƒg‚ÌƒTƒ“ƒvƒ‹
-\item \|ebibsample.bib|: ‰p•¶•¶Œ£ƒŠƒXƒg‚ÌƒTƒ“ƒvƒ‹
-\end{enumerate}
-ƒLƒbƒg‚ÍUnix—pCWindows (DOS)—pCMacintosh—p‚È‚Ç‚ª—pˆÓ‚³‚ê‚Ä‚¨‚èC’˜Ò‚Ì
-ì‹ÆŠÂ‹«‚É‰‚¶‚½‚à‚Ì‚ğ‘I‘ğ‚Å‚«‚é‚æ‚¤‚É‚È‚Á‚Ä‚¢‚éD‚Ü‚½CÀsŠÂ‹«‚Æ‚µ‚Ä‚Í 
-\LaTeXe ‚ğ‘O’ñ‚Æ‚µ‚Ä‚¢‚é‚Ì‚ÅC€”õ‚³‚ê‚½‚¢D
+\section{TEDã‚«ãƒ³ãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ã®å–ã‚Šçµ„ã¿}
 
-Microsoft Word‚ÉŠÖ‚µ‚Ä‚ÍC“Še‚³‚ê‚½ƒtƒH[ƒ}ƒbƒg‚ğŠî‚ÉC‹ÆÒ‚ª \LaTeX ‚É
-•ÏŠ·‚µ‚Ä‘g”Å‚ğs‚¤‚Ì‚ÅC‚ ‚­‚Ü‚Å‚àQl‚Æ‚µ‚Ä‚µ‚©g‚í‚È‚¢‚±‚Æ‚ğ³’m‚µ‚Ä’¸
-‚«‚½‚¢D
+\subsection{ã‚«ãƒ³ãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ã®ãƒ‡ã‚¶ã‚¤ãƒ³}
 
-%2.2
-\subsection{ÅIŒ´e‚Ìì¬‚Æ“Še}
-
-–{e‚É]‚Á‚Ä—pˆÓ‚µ‚½“Še—pŒ´e‚Ì \LaTeX ƒ\[ƒX‚©‚çpdfƒtƒ@ƒCƒ‹‚ğì¬‚µC
-Adobe‚Ìpdf reader‚Å“Ç‚ß‚é‚±‚Æ‚ğŠm”F‚µ‚½ŒãC
-\begin{quote}
-\small
-\|https://www.ipsj.or.jp/prms/author_pre_submit.do|
-\end{quote}
-‚ÌPRMS (Paper Review Management System)‚Éƒ[ƒ‹ƒAƒhƒŒƒX‚ğ“o˜^‚µC‘—‚ç‚ê
-‚½‚«‚½ƒ[ƒ‹‚É]‚Á‚ÄCw’è‚³‚ê‚½URL‚©‚ç“Še‚·‚éD“Še‚Ì—¬‚ê‚É‚Â‚¢‚Ä‚ÍC
-\begin{quote}
-\small
-\|http://www.ipsj.or.jp/journal/submit/manual/|
-\|manual_j_for_Author.pdf|
-\end{quote}
-‚ğQÆ‚³‚ê‚½‚¢D
-
-‚È‚¨Cî•ñˆ—Šw‰ï˜_•¶ƒWƒƒ[ƒiƒ‹‚Å‚ÍC˜_•¶‚Ì’˜Ò‚ª¸“ÇÒ‚Ì–¼‘O‚ğ’m‚é‚±
-‚Æ‚ª‚È‚¢‚¾‚¯‚È‚­C¸“ÇÒ‚à’˜Ò‚Ì–¼‘O‚ğ’m‚ç‚È‚¢ƒ_ƒuƒ‹ƒuƒ‰ƒCƒ“ƒh‚Ì¸“Ç‚ğæ
-‚è“ü‚ê‚Ä‚¢‚éD‚±‚Ì‚½‚ßC“Še”Å‚Å‚ÍCŒ´e‚É’˜Ò–¼‚Æ‚»‚ÌŠ‘®‚Í•\¦‚µ‚È‚¢‚æ
-‚¤‚É‚·‚é•K—v‚ª‚ ‚éD
-
-%2.3
-\subsection{ÅIŒ´e‚Ìì¬‚Æƒtƒ@ƒCƒ‹‚Ì‘—•t}
-
-“Še‚µ‚½˜_•¶‚ÌÌ˜^‚ªŒˆ’è‚µ‚½‚çC¸“ÇÒ‚©‚ç‚ÌƒRƒƒ“ƒg‚È‚Ç‚É‚µ‚½‚ª‚Á‚ÄŒ´e
-‚ğC³‚µC’˜ÒĞ‰î‚È‚Ç“Še‚É‚È‚©‚Á‚½€–Ú‚ª‚ ‚ê‚Î’Ç‰Á‚·‚éD‚Ü‚½}•\‚È‚Ç
-‚ÌƒŒƒCƒAƒEƒg‚àÅI“I‚È‚à‚Ì‚Æ‚·‚éD‚È‚¨Œã‚ÌZ³‚ÌèŠÔ‚ğÅ¬‚É‚·‚é‚½‚ß‚ÉC
-‚±‚Ì’iŠK‚Å‹Lq‚ÌŒë‚è‚È‚Ç‚ğŠ®‘S‚Éœ‹‚·‚é‚æ‚¤‚É–È–§‚Éƒ`ƒFƒbƒN‚µ‚Ä’¸‚«‚½‚¢D
-
-ÅI”Å‚Å‚ÍC’˜Ò–¼‚¨‚æ‚Ñ‚»‚ÌŠ‘®‚ğ•\¦‚·‚é‚Æ“¯‚ÉCŠw‰ï‚æ‚èw¦‚³‚ê‚½Šª
-”C†”Cæ“ªƒy[ƒW”Ô†Có•t^Ì˜^”NŒ“úi”N‚Í¼—ïj‚ğ‹Lq‚·‚éD‚È‚¨Šw
-‰ï‚©‚ç‚Ìw¦‚ª‚È‚¢€–Ú‚ÉŠÖ‚µ‚Ä‚ÍC‹Lq‚µ‚È‚­‚Ä‚æ‚¢D
-
-Šw‰ï‚Ö‚Í{\bf \LaTeX ƒtƒ@ƒCƒ‹i‚ğ‚Ü‚Æ‚ß‚½‚à‚Ìj‚Æƒn[ƒhƒRƒs[‚Ì‘o•û‚ğ}‘—
-•t‚·‚éD‘—•t‚·‚éƒtƒ@ƒCƒ‹ŒQ‚Ì•W€“I‚È\¬‚Í \|.tex| ‚Æ \|.bbl| ‚Å‚ ‚èC‚±
-‚Ì‘¼‚ÉPostScriptƒtƒ@ƒCƒ‹‚â“Á•Ê‚ÈƒXƒ^ƒCƒ‹ƒtƒ@ƒCƒ‹‚ª‚ ‚ê‚Î•t‰Á‚·‚éD‚È‚¨ 
-\|.tex| ‚Íˆóü‹ÆÒ‚ªC³‚·‚é‚±‚Æ‚ª‚ ‚é‚Ì‚ÅC{•K‚¸ˆê‚Â‚Ìƒtƒ@ƒCƒ‹‚É‚·‚é}D
-‚Ü‚½•K—v‚Èƒtƒ@ƒCƒ‹‚ª‘S‚Ä‚»‚ë‚Á‚Ä‚¢‚é‚±‚ÆC“Á‚É“Á•Ê‚ÈƒXƒ^ƒCƒ‹ƒtƒ@ƒCƒ‹‚É‰k
-‚ê‚ª‚È‚¢‚±‚Æ‚ğC’ˆÓ[‚­Šm”F‚µ‚Ä’¸‚«‚½‚¢D
-
-ƒtƒ@ƒCƒ‹‚Ì‘—•t•û–@‚È‚Ç‚É‚Â‚¢‚Ä‚ÍCÌ˜^’Ê’m‚Æ‚Æ‚à‚ÉŠw‰ï––±‹Ç‚©‚ç‘—‚ç‚ê‚é
-w¦‚É]‚¤D
-
-%2.4
-\subsection{’˜ÒZ³E‘g”ÅEo”Å}
-
-Šw‰ï‚Å‚Í—pŒê‚â—pš‚ğˆê’è‚ÌŠî€‚É]‚Á‚ÄC³‚·‚é‚±‚Æ‚ª‚ ‚éD‚Ü‚½ \LaTeX ‚Ì
-ÀsŠÂ‹«‚Ì·ˆÙ‚È‚Ç‚É‚æ‚Á‚Ä’˜Ò‚ªì¬‚µ‚½ƒn[ƒhƒRƒs[‚ÆÀÛ‚Ì‘g”ÅŒ‹‰Ê‚ª”÷
-–­‚ÉˆÙ‚È‚é‚±‚Æ‚ª‚ ‚éD‚±‚ê‚ç‚ÌC³‚â·ˆÙ‚ª–â‘è‚È‚¢‚©‚ğÅI“I‚ÉŠm”F‚·‚é‚½
-‚ß‚ÉC’˜Ò‚ÉƒQƒ‰ü‚è‚ª‘—‚ç‚ê‚é‚Ì‚ÅC‚à‚µ–â‘è‚ª‚ ‚ê‚Îé‘‚É‚æ‚Á‚Äw“E‚µ‚Ä
-•Ô‘—‚·‚éD‚È‚¨{\bf ‚±‚Ì’iŠK‚Å‚Ì‹LqŒë‚è‚ÌC³‚ÍŒ´‘¥‚Æ‚µ‚Ä”F‚ß‚ç‚ê‚È‚¢}‚Ì
-‚ÅCŒ´e‘—•t‚É×S‚Ì’ˆÓ‚ğ•¥‚Á‚Ä‚¢‚½‚¾‚«‚½‚¢D
-
-‚»‚ÌŒãC’˜Ò‚ÌZ³‚ÉŠî‚Ã‚«ÅI“I‚È‘g”Å‚ğs‚È‚¢CƒIƒ“ƒ‰ƒCƒ“o”Å‚·‚éD
-
-\newpage%%%!!!
-
-%3
-\section{˜_•¶ƒtƒH[ƒ}ƒbƒg‚Ìwj}
-\label{sec:format}
-
-ˆÈ‰ºCî•ñˆ—Šw‰ï˜_•¶ƒWƒƒ[ƒiƒ‹—pƒXƒ^ƒCƒ‹ƒtƒ@ƒCƒ‹‚ğ—p‚¢‚½˜_•¶ƒtƒH[ƒ}ƒb
-ƒg‚Ìwj‚É‚Â‚¢‚Äq‚×‚é‚Ì‚ÅC‚±‚ê‚É]‚Á‚ÄŒ´e‚ğ—pˆÓ’¸‚«‚½‚¢D\LaTeX ‚ğ—p
-‚¢‚½ˆê”Ê“I‚È•¶Íì¬‹Zp‚É‚Â‚¢‚Ä‚ÍC\cite{okumura, companion} “™‚ğQl‚É
-‚³‚ê‚½‚¢D
-
-%4
-\section{˜_•¶‚Ì\¬}
-\label{config}
-
-ƒtƒ@ƒCƒ‹‚ÍŸ‚Ì‚æ‚¤‚É‚È‚éD‰ºü•”‚Í“Še‚ÉÈ—ª‰Â”\‚È‚à‚ÌD‚Ü‚½ƒgƒ‰ƒ“ƒUƒN
-ƒVƒ‡ƒ““Á—LƒRƒ}ƒ“ƒh‚É‚Â‚¢‚Ä‚Í \ref{sig}~ß‚ğQÆ‚³‚ê‚½‚¢D
-
-\noindent
-\|\documentclass[submit]{ipsj}|‚Ü‚½‚Í\\
-\|\documentclass[submit,draft]{ipsj}|\footnote{{\tt [draft]}‚Í“Še—pC
-ƒXƒ^ƒCƒ‹ƒIƒvƒVƒ‡ƒ“‚Í\ref{option}ßQÆD}
-\\
-\quad •K—v‚È‚ç‚ÎƒIƒvƒVƒ‡ƒ“‚ÌƒXƒ^ƒCƒ‹‚ğ’Ç‰Á\\
-\Underline{\|\setcounter{|{\bf Šª”}\|}{<Šª”>}|}\\
-\Underline{\|\setcounter{|{\bf †”}\|}{<†”>}|}\\
-\Underline{\|\setcounter{|{\bf page}\|}{<æ“ªƒy[ƒW>}|}\\
-\Underline{\|\|{\bf ó•t}\|{<”N>}{<Œ>}{<“ú>}|}\\
-\Underline{\|\|{\bf Ì˜^}\|{<”N>}{<Œ>}{<“ú>}|}\\
-\quad •K—v‚È‚ç‚Îƒ†[ƒU‚Ìƒ}ƒNƒ‚ğ‚±‚±‚É‹Lq\\
-\|\begin{document}|\\
-\|\title{•\‘è(˜a•¶)}|\\
-\|\etitle{•\‘è(‰p•¶)}|\\
-\Underline{\|\affiliate{Š‘®ƒ‰ƒxƒ‹}{<˜a•¶Š‘®>\\<‰p•¶Š‘®>}|}\\
-\quad •K—v‚È‚ç‚Î \|\paffiliate| ‚É‚æ‚èŒ»İ‚ÌŠ‘®‚ğéŒ¾‚·‚é\\
-\Underline{\|\paffiliate{Œ»Š‘®ƒ‰ƒxƒ‹}{<˜aŒ»Š‘®>\\<‰pŒ»Š‘®>}|}\\\\
-\Underline{\|\author{î•ñ ‘¾˜Y}{Taro Joho}|}\\
-\Underline{\|          {<Š‘®ƒ‰ƒxƒ‹>}[E-mail]|}\\
-\Underline{\|\author{ˆ— ‰Ôq}{Hanako Shori}|}\\
-\Underline{\|          {<Š‘®ƒ‰ƒxƒ‹2,Œ»Š‘®ƒ‰ƒxƒ‹3>}|}\\\\
-\|\begin{abstract}|\\
-\|<ŠT—vi˜a•¶j>|\\
-\|\end{abstract}|\\
-\|\begin{jkeyword}|\\
-\|<ƒL[ƒ[ƒh>|\\
-\|\end{jkeyword}|\\
-\|\begin{eabstract}|\\
-\|<ŠT—vi‰p•¶j>|\\
-\|\end{eabstract}|
-\|\begin{ekeyword}|\\
-\|<KeyWords>|\\
-\|\end{ekeyword}|\\
-\|\maketitle|\\
-\|\section{|‘æ1ß‚Ì•\‘è\|}|\\
-\dots\dots\dots\dots\dots\\
-\quad \|<–{•¶>|\\
-\dots\dots\dots\dots\dots\\
-Ó«‚ª‚ ‚éê‡‚Í\\
-\|\begin{acknowledgment}|\\
-\|\end{acknowledgment}|\\\\
-\|\begin{thebibliography}{99}%9 or 99|\\
-\|\bibitem{1}|\\
-\|\bibitem{2}|\\
-\|\end{thebibliography}|\\\\
-•t˜^‚ª‚ ‚éê‡‚Í\\
-\|\appendix|\\
-\|\section{|•t˜^1ß‚Ì•\‘è\|}|\\\\
-\Underline{\|\begin{biography}|}\\
-\Underline{\|\profile{<X>}{<•cš –¼‘O>}{<ƒvƒƒtƒB[ƒ‹•¶Í>}|}\\
-\Underline{\|\end{biography}|}\\
-\|\end{document}|
-
-
-%4.1
-\subsection{ƒIƒvƒVƒ‡ƒ“EƒXƒ^ƒCƒ‹}
-
-\label{option} \|\documentclass{ipsj}|‚ÌƒIƒvƒVƒ‡ƒ“\footnote{Œ¤‹†‰ï—p‚ÌƒI
-ƒvƒVƒ‡ƒ“‚Í \ref{sig}~ß‚Åà–¾‚·‚éD}‚Æ‚µ‚ÄCˆÈ‰º‚Ì‚à‚Ì‚ğ—pˆÓ‚µ‚Ä‚ ‚éD
-{\bf ‰½‚à’è‹`‚µ‚È‚¯‚ê‚Î˜a•¶˜_•¶—p‚Ì•W€ƒXƒ^ƒCƒ‹}‚Æ‚È‚é‚ªC¡‰ñC‘g”Å‚ÌÛ
-‚É˜a•¶˜_•¶‚Ìƒ^ƒCƒgƒ‹C˜a•¶˜_•¶í•Ê‚Éu{\bf ‘¾ƒ~ƒ“}vu{\bf ‘¾ƒS}v‚ÌƒtƒH
-ƒ“ƒg‚ğg—p‚µ‚Ä‚¢‚é‚½‚ßC\TeX •W€ƒtƒHƒ“ƒg‚É’u‚«Š·‚¦‚é \|submit| ‚Æ‚¢‚¤ƒI
-ƒvƒVƒ‡ƒ“‚ğ—pˆÓ‚µ‚½D
-
-\begin{enumerate}
-\item\|submit         | ƒtƒHƒ“ƒg’uŠ·—p
-\item\|draft          | “Še—p
-\item\|invited        | µ‘Ò˜_•¶
-\item\|sigrecommended | „‘E˜_•¶
-\item\|technote       | ƒeƒNƒjƒJƒ‹ƒm[ƒg—p
-\item\|preface        | ˜•¶—p
-\item\|JIP            | ‰p•¶—p
-\end{enumerate}
-‚±‚ê‚ç‚ÌƒIƒvƒVƒ‡ƒ“‚Í”CˆÓ‚Ì‘g‡‚¹‚Åg—p‚ª‰Â”\‚Å‚ ‚éD
-
-\|\documentclass[submit,draft]{ipsj}|‚Æ‚·‚ê‚ÎC
-“Še—p‚ÌƒXƒ^ƒCƒ‹‚Æ‚È‚éD
-
-‚È‚¨C\|\usepackage| ‚Å•â•“I‚ÈƒXƒ^ƒCƒ‹ƒtƒ@ƒCƒ‹‚ğw’è‚µ‚½ê‡‚É‚ÍCÅI
-Œ´e—p‚Ìƒtƒ@ƒCƒ‹ŒQ‚É•K‚¸ƒXƒ^ƒCƒ‹ƒtƒ@ƒCƒ‹‚ğŠÜ‚ß‚éD‚½‚¾‚µC\LaTeXe ‚Ì•W€
-”z•z‚ÉŠÜ‚Ü‚ê‚Ä‚¢‚é‚à‚Ìi‚½‚Æ‚¦‚Î \|graphicx|j‚É‚Â‚¢‚Ä‚Í“¯••‚Ì•K—v‚Í‚È‚¢D
-
-ƒXƒ^ƒCƒ‹ƒtƒ@ƒCƒ‹‚É‚æ‚Á‚Ä‚Í˜_•¶ƒXƒ^ƒCƒ‹‚Æ–µ‚‚·‚é‚æ‚¤‚È‚à‚Ì‚à‚ ‚é‚Ì‚ÅC
-’ˆÓ‚µ‚Äg—p‚µ‚Ä’¸‚«‚½‚¢D
-
-%4.2
-\subsection{•\‘èE’˜Ò–¼“™}
-
-•\‘èC’˜Ò–¼‚Æ‚»‚ÌŠ‘®C‚¨‚æ‚ÑŠT—v‚ğ‘Oq‚ÌƒRƒ}ƒ“ƒh‚âŠÂ‹«‚É‚æ‚è{\bf ˜a•¶‚Æ
-‰p•¶‚Ì‘o•û‚É‚Â‚¢‚Ä}’è‹`‚µ‚½ŒãC\|\maketitle| ‚É‚æ‚Á‚Äo—Í‚·‚éD
-
-%4.2.1
-\subsubsection{•\‘è} 
-
-•\‘è‚ÍC\|\title| ‚¨‚æ‚Ñ \|\etitle| ‚Å’è‹`‚µ‚½•\‘è‚ÍƒZƒ“ƒ^ƒŠƒ“ƒO‚³‚ê‚éD
-•¶š”‚Ì‘½‚¢‚à‚Ì‚É‚Â‚¢‚Ä‚ÍC“K‹X \|\\| ‚ğ‘}“ü‚µ‚Ä‰üs‚·‚éD
-
-%4.2.2
-\subsubsection{’˜Ò–¼EŠ‘®} 
-
-Še’˜Ò‚ÌŠ‘®‚ğ‘æˆê’˜Ò‚©‚ç‡‚É \|\affiliate| ‚ğ—p‚¢‚Äƒ‰ƒxƒ‹i‘æ1ˆø”j‚ğ
-•t‚¯‚È‚ª‚ç’è‹`‚·‚é‚ÆC‹r’‚É”Ô†‚ğ•t‚¯‚ÄŠ‘®‚ªo—Í‚³‚ê‚éD‚È‚¨C•¡”‚Ì’˜
-Ò‚ª“¯‚¶Š‘®‚Å‚ ‚éê‡‚É‚ÍCˆê“x’è‹`‚·‚é‚¾‚¯‚Å—Ç‚¢D
-
-Œ»İ‚ÌŠ‘®‚Í \|\paffiliate| ‚ğ—p‚¢C“¯—l‚Éƒ‰ƒxƒ‹CŠ‘®æ‚ğ‹Lq‚·‚éDŠ‘®
-æ‚É‚Í©“®‚ÅuŒ»İvC\|\\|‚Ì‰üs‚ÅuPresently withv‚ª‘}“ü‚³‚ê‚éD’˜Ò
-–¼‚Í \|\author| ‚Å’è‹`‚·‚éDŠe’˜Ò–¼‚Ì’¼Œã‚ÉC‰p•¶’˜Ò–¼CŠ‘®ƒ‰ƒxƒ‹‚Æƒ[
-ƒ‹ƒAƒhƒŒƒX‚ğ‹L“ü‚·‚éD’˜Ò‚ª•¡”‚Ìê‡‚Í \|\author| ‚ğŒJ‚è•Ô‚·‚±‚Æ‚ÅC2
-lC3lC\dots ‚Æ‘‚¦‚Ä‚¢‚­DŒ»İ‚ÌŠ‘®‚âC•¡”‚ÌŠ‘®æ‚ğ’Ç‰Á‚·‚éê‡‚É
-‚ÍCŠ‘®ƒ‰ƒxƒ‹‚ğƒJƒ“ƒ}‚Å‹æØ‚èC’Ç‰Á‚·‚ê‚Î‚æ‚¢D
-
-‚Ü‚½Cƒ[ƒ‹ƒAƒhƒŒƒX•”•ª‚ÍÈ—ª‚ª‰Â”\‚¾‚ªC•K‚¸‘ã•\Ò‚ÌƒAƒhƒŒƒX‚Í•K—v‚Æ‚È
-‚éD‚È‚¨C˜a•¶’˜Ò–¼C‰p•¶’˜Ò–¼‚ÍC©‚Æ–¼‚ğ”¼ŠpiASCIIj‚Ì‹ó”’‚Å‹æØ‚éD
-
-%4.2.3
-\subsubsection{ŠT—v} 
-
-˜a•¶‚ÌŠT—v‚Í \|abstract| ŠÂ‹«‚Ì’†‚ÉC
-‰p•¶‚ÌŠT—v‚Í \|eabstract| ŠÂ‹«‚Ì’†‚ÉC‚»‚ê‚¼‚ê‹Lq‚·‚éD
-
-%4.2.4
-\subsubsection{ƒL[ƒ[ƒh} 
-
-˜a•¶‚ÌŠT—v‚Í \|jkeyword| ŠÂ‹«‚Ì’†‚ÉC
-‰p•¶‚ÌŠT—v‚Í \|ekeyword| ŠÂ‹«‚Ì’†‚ÉC‚»‚ê‚¼‚ê1`5Œê‹Lq‚·‚éD
-
-%4.3
-\subsection{–{•¶}
-
-%4.3.1
-\subsubsection{Œ©o‚µ}
-
-ß‚â¬ß‚ÌŒ©o‚µ‚É‚Í \|\section|, \|\subsection|, \|\subsubsection|,
-\|\paragraph| ‚Æ‚¢‚Á‚½ƒRƒ}ƒ“ƒh‚ğg—p‚·‚éD
-
-\<u’è‹`vCu’è—v‚È‚Ç‚É‚Â‚¢‚Ä‚ÍC\|\newtheorem|‚Å“K‹XŠÂ‹«‚ğéŒ¾‚µC‚»
-‚ÌŠÂ‹«‚ğ—p‚¢‚Ä‹Lq‚·‚éD
-
-%4.3.2
-\subsubsection{s‘—‚è}
-
-2’i‘g‚ğÌ—p‚µ‚Ä‚¨‚èC¶‰E‚Ì’i‚Ås‚ÌŠî€ü‚ÌˆÊ’u‚ªˆê’v‚·‚é‚±‚Æ‚ğŒ´‘¥‚Æ‚µ
-‚Ä‚¢‚éD‚Ü‚½CßŒ©o‚µ‚È‚ÇCs‚ÌŠÔŠu‚ğ‘¼‚æ‚è‚½‚­‚³‚ñ‚Æ‚Á‚½•û‚ª“Ç‚İ‚â‚·‚¢
-êŠ‚Å‚ÍC‚±‚ÌŒ´‘¥‚ğç‚é‚æ‚¤‚ÉƒXƒ^ƒCƒ‹ƒtƒ@ƒCƒ‹‚ª©“®“I‚ÉƒXƒy[ƒX‚ğ‘}“ü‚·
-‚éD‚µ‚½‚ª‚Á‚Ä–{•¶’†‚Å‚Í \|\vspace| ‚â \|\vskip| ‚ğ—p‚¢‚½ƒXƒy[ƒX‚Ì’²®
-‚ğs‚È‚í‚È‚¢‚æ‚¤‚É‚·‚é‚±‚ÆD
-
-%4.3.3
-\subsubsection{ƒtƒHƒ“ƒgƒTƒCƒY}
-
-ƒtƒHƒ“ƒgƒTƒCƒY‚ÍCƒXƒ^ƒCƒ‹ƒtƒ@ƒCƒ‹‚É‚æ‚Á‚Ä©“®“I‚Éİ’è‚³‚ê‚é‚½‚ßCŠî–{“I
-‚É‚Í’˜Ò‚ª©•ª‚ÅƒtƒHƒ“ƒgƒTƒCƒY‚ğ•ÏX‚·‚é•K—v‚Í‚È‚¢D
-
-%4.3.4
-\subsubsection{‹å“Ç“_}
-
-‹å“_‚É‚Í‘SŠp‚ÌuDvC“Ç“_‚É‚Í‘SŠp‚ÌuCv‚ğ—p‚¢‚éD‚½‚¾‚µ‰p•¶’†‚â”®’†
-‚Åu.v‚âu,v‚ğg‚¤ê‡‚É‚ÍC”¼Šp•¶š‚ğg‚¤DuBv‚âuAv‚Íg‚í‚È‚¢D
-
-%4.3.5
-\subsubsection{‘SŠp•¶š‚Æ”¼Šp•¶š}
-
-‘SŠp•¶š‚Æ”¼Šp•¶š‚Ì—¼•û‚É‚ ‚é•¶š‚ÍŸ‚Ì‚æ‚¤‚Ég‚¢•ª‚¯‚éD
-
-\begin{enumerate}
-\item Š‡ŒÊ‚Í‘SŠp‚Ìuiv‚Æujv‚ğ—p‚¢‚éD’A‚µC‰p•¶‚ÌŠT—vC}•\Œ©o‚µC
-‘ƒf[ƒ^‚Å‚Í”¼Šp‚Ìu(v‚Æu)v‚ğ—p‚¢‚éD
-
-\item ‰p”šC‹ó”’C‹L†—Ş‚Í”¼Šp•¶š‚ğ—p‚¢‚éD‚½‚¾‚µC‹å“Ç“_‚ÉŠÖ‚µ‚Ä‚ÍC
-‘O€‚Åq‚×‚½‚æ‚¤‚È—áŠO‚ª‚ ‚éD
-
-\item ƒJƒ^ƒJƒi‚Í‘SŠp•¶š‚ğ—p‚¢‚éD
-
-\item ˆø—p•„‚Å‚ÍŠJ‚«‚Æ•Â‚¶‚ğ‹æ•Ê‚·‚éD
-ŠJ‚«‚É‚Í \|``| ‚ğ—p‚¢C•Â‚¶‚É‚Í\|''| ‚ğ—p‚¢‚éD
-\end{enumerate}
-
-%4.3.6
-\subsubsection{‰Óğ‘}
-
-‰Óğ‘‚ÉŠÖ‚·‚éŒ`®‚ğ“Á‚É’è‚ß‚Ä‚¢‚È‚¢Dê‡‚É‰‚¶‚Ä•W€“I‚È \|enumerate|,
-\|itemize|, \|description| ‚ÌŠÂ‹«‚ğ—p‚¢‚Ä‚æ‚¢D
-
-
-%4.3.7
-\subsubsection{‹r’}
-
-‹r’‚Í \|\footnote| ƒRƒ}ƒ“ƒh‚ğg‚Á‚Ä‘‚­‚ÆCƒy[ƒW’PˆÊ‚É\footnote{‹r’‚Ì
-—áD}‚â\footnote{“ñ‚Â‚ß‚Ì‹r’D}‚Ì‚æ‚¤‚ÈQÆ‹L†‚Æ‚Æ‚à‚É‹r’‚ª¶¬‚³‚ê‚éD
-‚È‚¨Cƒy[ƒW“à‚É•¡”‚Ì‹r’‚ª‚ ‚éê‡CQÆ‹L†‚Í \LaTeX ‚ğ2‰ñÀs‚µ‚È‚¢
-‚Æ³‚µ‚­‚È‚ç‚È‚¢‚±‚Æ‚É’ˆÓ‚³‚ê‚½‚¢D
-
-‚Ü‚½ê‡‚É‚æ‚Á‚Ä‚ÍC‹r’‚ğ‚Â‚¯‚½ˆÊ’u‚Æ‹r’–{‘Ì‚Æ‚ğ•Ê‚Ì’i‚É’u‚­•û‚ª‚æ‚¢‚±
-‚Æ‚à‚ ‚éD‚±‚Ìê‡‚É‚ÍC\|\footnotemark| ƒRƒ}ƒ“ƒh‚â \|\footnotetext| ƒR
-ƒ}ƒ“ƒh‚ğg‚Á‚Ä‘Îˆ‚µ‚Ä‚¢‚½‚¾‚«‚½‚¢D
-
-‚È‚¨C‹r’”Ô†‚Í˜_•¶“à‚Å’Ê‚µ”Ô†‚Åo—Í‚³‚ê‚éD
-
-%4.3.8
-\subsubsection{Overfull‚ÆUnderfull}
-
-‘g”Å‚É‚Íoverfull‚ğ‹N‚±‚³‚È‚¢‚±‚Æ‚ğŒ´‘¥‚Æ‚µ‚Ä‚¢‚éD]‚Á‚ÄC‚Ü‚¸’ño‚·‚é
-ƒ\[ƒX‚ª’˜Ò‚ÌŠÂ‹«‚Åoverfull‚ğ‹N‚±‚³‚È‚¢‚æ‚¤‚ÉC•¶Í‚ğH•v‚·‚é‚È‚Ç‚ÌÅ‘P
-‚Ì“w—Í‚ğ•¥‚Á‚Ä‚¢‚½‚¾‚«‚½‚¢D’A‚µC\|flushleft| ŠÂ‹«C\|\\|C
-\|\linebreak| ‚È‚Ç‚É‚æ‚é—¼’[‘µ‚¦‚ğ‚µ‚È‚¢Œ`‚Å‚Ìoverfull‚Ì‰ñ”ğ‚ÍC‚Å‚«‚é‚¾
-‚¯”ğ‚¯‚Ä‚¢‚½‚¾‚«‚½‚¢D‚Ü‚½’˜Ò‚Ì·•M“_‚Å‚Í”­¶‚µ‚È‚¢overfull‚ªC‘g”Å
-‚ÌŠÂ‹«‚Å‚Í”­¶‚·‚é‚±‚Æ‚à‚ ‚éD‚±‚Ì‚æ‚¤‚È–‘Ô‚ğ‚Å‚«‚é‚¾‚¯‰ñ”ğ‚·‚é‚½‚ß‚ÉC
-•¶’†‚Ì’·‚¢”®‚â \|\verb| ‚ğ”ğ‚¯‚éCƒpƒ‰ƒOƒ‰ƒt‚Ìæ“ª•t‹ß‚Å‚Í’·‚¢‰p’PŒê‚ğ
-g—p‚µ‚È‚¢C‚È‚Ç‚Ì’ˆÓ‚ğ•¥‚¤‚æ‚¤‚É‚µ‚Ä’¸‚«‚½‚¢D
-
-%4.4
-\subsection{”®}\label{sec:Item}
-
-%4.4.1
-\subsubsection{–{•¶’†‚Ì”®}
-
-–{•¶’†‚Ì”®‚Í \|$| ‚Æ \|$|, \|\(| ‚Æ \|\)|, ‚ ‚é‚¢‚Í \|math| ŠÂ‹«‚Ì‚¢‚¸
-‚ê‚ÅˆÍ‚ñ‚Å‚à‚æ‚¢D
-
-%4.4.2
-\subsubsection{•Ê‘g‚Ì”®}
-
-•Ê‘g”®(displayed math)‚É‚Â‚¢‚Ä‚Í \|$$| ‚Æ \|$$| ‚Íg—p‚¹‚¸‚ÉC\|\[| ‚Æ 
-\|\]| ‚ÅˆÍ‚Ş‚©C\|displaymath|, \|equation|, \|eqnarray| ‚Ì‚¢‚¸‚ê‚©‚ÌŠÂ
-‹«‚ğ—p‚¢‚éD‚±‚ê‚ç‚Í
-%
-\begin{equation}
-\Delta_l = \sum_{i=l|1}^L\delta_{pi}
-\end{equation}
-%
-‚Ì‚æ‚¤‚ÉCƒZƒ“ƒ^ƒŠƒ“ƒO‚Å‚Í‚È‚­ŒÅ’èš‰º‚°‚Å”®‚ğo—Í‚µC‚©‚Â”w‚ª‚‚¢”®
-‚É‚æ‚és‘—‚è‚Ì—‚ê‚ğ‹zû‚·‚é‹@”\‚ª‚ ‚éD
-
-%4.4.3
-\subsubsection{eqnarrayŠÂ‹«}
-
-Œİ‚¢‚ÉŠÖ˜A‚·‚é•Ê‘g‚Ì”®‚ª2sˆÈã˜A‘±‚µ‚ÄŒ»‚ê‚éê‡‚É‚ÍC’P‚É\|\[| ‚Æ 
-\|\]|C‚ ‚é‚¢‚Í \|\begin{equation}| ‚Æ\|\end{equation}| ‚ÅˆÍ‚Á‚½”®‚ğ‘
-‚«•À‚×‚é‚Ì‚Å‚Í‚È‚­C\|\begin|\allowbreak\|{eqnarray}| ‚Æ 
-\|\end{eqnarray}| ‚ğg‚Á‚ÄC“™†i‚ ‚é‚¢‚Í•s“™†j‚ÌˆÊ’u‚Åc‘µ‚¦‚ğs‚È‚Á
-‚½•û‚ª“Ç‚İ‚â‚·‚¢D
-
-%4.4.4
-\subsubsection{”®‚ÌƒtƒHƒ“ƒg}
-
-\LaTeX ‚ª•W€“I‚ÉƒTƒ|[ƒg‚µ‚Ä‚¢‚é‚à‚ÌˆÈŠO‚Ì“Áê‚È”®—pƒtƒHƒ“ƒg‚ÍC‚Å‚«
-‚é‚¾‚¯g‚í‚È‚¢‚æ‚¤‚É‚³‚ê‚½‚¢D‚Ç‚¤‚µ‚Ä‚àg—p‚µ‚È‚¯‚ê‚Î‚È‚ç‚È‚¢ê‡‚É‚ÍC
-‚»‚Ì|\‚µo‚Ä’¸‚­‚Æ‚Æ‚à‚ÉC‘g”ÅH’ö‚É[‚­ŠÖ—^‚µ‚Ä’¸‚­‚±‚Æ‚à‚ ‚é‚±‚Æ‚É—¯
-ˆÓ‚³‚ê‚½‚¢D
-
-\begin{figure}[tb]
-\setbox0\vbox{
-\hbox{\|\begin{figure}[tb]|}
-\hbox{\quad \|<|}–{‘Ì‚Ìw’è\|>|}
-\hbox{\|\caption{<|˜a•¶Œ©o‚µ\|>}|}
-\hbox{\|\ecaption{<|‰p•¶Œ©o‚µ\|>}|}
-\hbox{\|\label{| $\ldots$ \|}|}
-\hbox{\|\end{figure}|}
-}
-\centerline{\fbox{\box0}}
-\caption{1’i•‚Ì}}
-\ecaption{Single column figure with caption\\
-explicitly broken by $\backslash\backslash$.}
-\label{fig:single}
-\end{figure}
-
-%4.5
-\subsection{}}
-
-1’i‚Ì•‚É‚¨‚³‚Ü‚é}‚ÍC\figref{fig:single} ‚ÌŒ`®‚Åw’è‚·‚éDˆÊ’u‚Ìw’è
-‚É \|h| ‚Íg‚í‚È‚¢D‚Ü‚½C}‚Ì‰º‚É˜a•¶‚Æ‰p•¶‚Ì‘o•û‚ÌŒ©o‚µ‚ğC
-\|\caption| ‚Æ \|\ecaption| ‚Åw’è‚·‚éD•¶š”‚ª‘½‚¢Œ©o‚µ‚Í‚Í©“®“I‚É‰ü
-s‚µ‚ÄÅ‘å•‚Ìs‚ğŠî€‚ÉƒZƒ“ƒ^ƒŠƒ“ƒO‚·‚é‚ªCŒ©o‚µ‚ª2s‚É‚È‚éê‡‚É‚Í“K
-‹X \|\\| ‚ğ‘}“ü‚µ‚Ä‰üs‚µ‚½‚Ù‚¤‚ª—Ç‚¢Œ‹‰Ê‚Æ‚È‚é‚±‚Æ‚ª‚µ‚Î‚µ‚Î‚ ‚é
-i\figref{fig:single} ‚Ì‰p•¶Œ©o‚µ‚ğQÆjD}‚ÌQÆ‚Í \|\figref{<|ƒ‰ƒx
-ƒ‹\|>}| ‚ğ—p‚¢‚Äs‚È‚¤D
-
-\begin{figure}[tb]
-\begin{minipage}[t]{0.5\columnwidth}
-\footnotesize
-\setbox0\vbox{
-\hbox{\|\begin{minipage}[t]%|}
-\hbox{\|  {0.5\columnwidth}|}
-\hbox{\|\CaptionType{table}|}
-\hbox{\|\caption{| \ldots \|}|}
-\hbox{\|\ecaption{| \ldots \|}|}
-\hbox{\|\label{| \ldots \|}|}
-\hbox{\|\makebox[\textwidth][c]{%|}
-\hbox{\|\begin{tabular}[t]{lcr}|}
-\hbox{\|\hline\hline|}
-\hbox{\|left&center&right\\\hline|}
-\hbox{\|L1&C1&R1\\|}
-\hbox{\|L2&C2&R2\\\hline|}
-\hbox{\|\end{tabular}}|}
-\hbox{\|\end{minipage}|}}
-\hbox{}
-\centerline{\fbox{\box0}}
-\caption{\protect\tabref*{tab:right} ‚Ì’†g}
-\ecaption{Contents of Table \protect\ref{tab:right}.}
-\label{fig:left}
-\end{minipage}%
-\begin{minipage}[t]{0.5\columnwidth}
-\CaptionType{table}
-\caption{\protect\figref*{fig:left} ‚Åì¬‚µ‚½•\}
-\ecaption{A table built by\\ Fig.\,\protect\ref{fig:left}.}
-\label{tab:right}
-\vskip1mm
-\makebox[\textwidth][c]{\begin{tabular}[t]{lcr}\hline\hline
-left&center&right\\\hline
-L1&C1&R1\\
-L2&C2&R2\\\hline
-\end{tabular}}
-\end{minipage}
-\end{figure}
-
-\begin{figure*}[tb]
-\setbox0\vbox{\large
-\hbox{\|\begin{figure*}[t]|}
-\hbox{\quad \|<|}–{‘Ì‚Ìw’è\|>|}
-\hbox{\|\caption{<|˜a•¶Œ©o‚µ\|>}|}
-\hbox{\|\ecaption{<|‰p•¶Œ©o‚µ\|>}|}
-\hbox{\|\label{| $\ldots$ \|}|}
-\hbox{\|\end{figure*}|}}
-\centerline{\fbox{\hbox to.9\textwidth{\hss\box0\hss}}}
-\caption{2’i•‚Ì}}
-\ecaption{Double column figure.}
-\label{fig:double}
-\end{figure*}
-
-
-‚Ü‚½†–ÊƒXƒy[ƒX‚Ìß–ñ‚Ì‚½‚ß‚ÉC1‚Â‚Ì \|figure|i‚Ü‚½‚Í \|table|jŠÂ‹«‚Ì
-’†‚É•¡”‚Ì}•\‚ğ•À‚×‚Ä•\¦‚µ‚½‚¢ê‡‚É‚ÍC\figref{fig:left} ‚Æ 
-\tabref{tab:right} ‚Ì‚æ‚¤‚ÉŒÂX‚Ì}•\‚ÆŠeX‚Ì \|\caption|/\|\ecaption| 
-‚ğ \|minipage| ŠÂ‹«‚É“ü‚ê‚é‚±‚Æ‚ÅÀŒ»‚Å‚«‚éD‚È‚¨}‚Æ•\‚ª¬İ‚·‚éê‡C
-\|minipage| ŠÂ‹«‚Ì’†‚Å\|\CaptionType{figure}| ‚ ‚é‚¢‚Í \|\CaptionType|
-\|{table}| ‚ğw’è‚·‚ê‚ÎCŠO‘¤‚ÌŠÂ‹«‚ª \|figure| ‚Å‚ ‚Á‚Ä‚à \|table| ‚Å‚ ‚Á
-‚Ä‚àw’è‚³‚ê‚½Œ©o‚µ‚ª“¾‚ç‚ê‚éD
-
-2’i‚Ì•‚É‚Ü‚½‚ª‚é}‚ÍC\figref{fig:double} ‚ÌŒ`®‚Åw’è‚·‚éD
-ˆÊ’u‚Ìw’è‚Í \|t| ‚µ‚©g‚¦‚È‚¢D
-
-}‚Ì’†g‚Å‚Í–{•¶‚Æˆá‚¢C‚Ç‚Ì‚æ‚¤‚È‘å‚«‚³‚ÌƒtƒHƒ“ƒg‚ğg—p‚µ‚Ä‚à\‚í‚È‚¢
-i\figref{fig:double} QÆjD‚Ü‚½}‚Ì’†g‚Æ‚µ‚ÄCencapsulate ‚³‚ê‚½
-PostScriptƒtƒ@ƒCƒ‹i‚¢‚í‚ä‚éEPSƒtƒ@ƒCƒ‹j‚ğ“Ç‚İ‚Ş‚±‚Æ‚à‚Å‚«‚éD“Ç‚İ
-‚İ‚Ì‚½‚ß‚É‚ÍCƒvƒŠƒAƒ“ƒuƒ‹‚Å
-%
-\begin{quote}
-\|\usepackage{graphicx}|
-\end{quote}
-%
-‚ğs‚Á‚½ã‚ÅC\|\includegraphics| ƒRƒ}ƒ“ƒh‚ğ}‚ğ–„‚ß‚Ş‰ÓŠ‚É’u‚«C‚»‚Ì
-ˆø”‚Éƒtƒ@ƒCƒ‹–¼i‚È‚Çj‚ğw’è‚·‚éD
-
-%4.6
-\subsection{•\}
-
-•\‚ÌŒrü‚Í‚È‚é‚×‚­­‚È‚­‚·‚é‚Ì‚ªCdã‚ª‚è‚ğ‚·‚Á‚«‚è‚³‚¹‚éƒRƒc‚Å‚ ‚éDŒr
-ü‚ğ‚Â‚¯‚éê‡‚É‚ÍCˆê”Ôã‚ÌŒrü‚É‚Í“ñdü‚ğg‚¢C¶‰E‚Ì’[‚É‚Íc‚ÌŒrü‚ğ
-‚Â‚¯‚È‚¢ i\tabref{tab:example}jD•\’†‚ÌƒtƒHƒ“ƒgƒTƒCƒY‚ÌƒfƒtƒHƒ‹ƒg‚Í
-\|\footnotesize|‚Å‚ ‚éD
-
-‚Ü‚½C•\‚Ìã‚É˜a•¶‚Æ‰p•¶‚Ì‘o•û‚ÌŒ©o‚µ‚ğC \|\caption|‚Æ \|\ecaption| ‚Å
-w’è‚·‚éD•\‚ÌQÆ‚Í \|\tabref{<|ƒ‰ƒxƒ‹\|>}| ‚ğ—p‚¢‚Äs‚È‚¤D
-
-\begin{table}[tb] 
-\caption{•\‚Ì—á} 
-\ecaption{An Example of Table.}
-\label{tab:example}
-\hbox to\hsize{\hfil
-\begin{tabular}{l|lll}\hline\hline
-& column1 & column2 & column3 \\\hline
-row1 &	item 1,1 & item 2,1 & ---\\
-row2 &	---      & item 2,2 & item 3,2 \\
-row3 &	item 1,3 & item 2,3 & item 3,3 \\
-row4 &	item 1,4 & item 2,4 & item 3,4 \\\hline
-\end{tabular}\hfil}
-\end{table}
-
-
-\newpage%%%!!!
-
-%4.7
-\subsection{Ql•¶Œ£EÓ«}
-
-%4.7.1
-\subsubsection{Ql•¶Œ£‚ÌQÆ}
-
-–{•¶’†‚ÅQl•¶Œ£‚ğQÆ‚·‚éê‡‚É‚Í%C%Ql•¶Œ£”Ô†‚ª•¶’†‚Ì’PŒê‚Æ‚µ‚Äg‚í‚ê
-%‚éê‡‚ÆC‚»‚¤‚Å‚È‚¢QÆ‚Æ‚Å‚ÍCg—p‚·‚é•¶š‚Ì‘å‚«‚³‚ªˆÙ‚È‚éD‘OÒ‚Í
-%\|\Cite|‚É‚æ‚èQÆ‚µCŒãÒ‚Í
-%\|\cite|‚É‚æ‚èQÆ‚·‚éD‚½‚Æ‚¦‚ÎG
-\|\cite|‚ğg—p‚·‚éDQÆ‚³‚ê‚½ƒ‰ƒxƒ‹‚Í©“®“I‚Éƒ\[ƒg‚³‚êC
-\|[]|‚Å‚»‚ê‚¼‚ê‹æØ‚ç‚ê‚éD
-%
-\begin{quote}
-•¶Œ£ \|\cite{companion,okumura}| ‚Í \LaTeX ‚Ì‘‡“I‚È‰ğà‘‚Å‚ ‚éD
-\end{quote}
-%
-‚Æ‘‚­‚ÆG
-%
-\begin{quote}
-•¶Œ£\cite{companion,okumura}‚Í \LaTeX ‚Ì‘‡“I‚È‰ğà‘‚Å‚ ‚éD
-\end{quote}
-%
-‚ª“¾‚ç‚ê‚éD
-
-%4.7.2
-\subsubsection{Ql•¶Œ£ƒŠƒXƒg}
-Ql•¶Œ£ƒŠƒXƒg‚É‚ÍC
-Œ´‘¥‚Æ‚µ‚Ä–{•¶’†‚Åˆø—p‚µ‚½•¶Œ£‚Ì‚İ‚ğ—ñ‹“‚·‚éD
-‡˜‚ÍQÆ‡‚ ‚é‚¢‚Í‘æˆê’˜Ò‚Ì•cš‚ÌƒAƒ‹ƒtƒ@ƒxƒbƒg‡‚Æ‚·‚éD
-•¶Œ£ƒŠƒXƒg‚ÍBiB\TeX ‚Æ\verb+ipsjunsrt.bst+iQÆ‡j
-‚Ü‚½‚Í\verb+ipsjsort.bst+iƒAƒ‹ƒtƒ@ƒxƒbƒg‡j‚ğ—p‚¢‚Äì‚èC
-\verb+\bibliograhpystyle+‚Æ\verb+\bibliography+ƒRƒ}ƒ“ƒh‚É‚æ‚è
-—˜—p‚·‚é‚±‚Æ‚ªo—ˆ‚éD
-‚±‚ê‚ç‚ğ—p‚¢‚ê‚ÎC
-‹K’è‚Ì‘ÌÙ‚É‚ ‚Á‚½‚à‚Ì‚ª‚Å‚«‚é‚Ì‚ÅC
-‚Å‚«‚é‚¾‚¯—˜—p‚µ‚Ä‚¢‚½‚¾‚«‚½‚¢D
-‚Ü‚½»”Å—p‚Ìƒtƒ@ƒCƒ‹ŒQ‚É‚Í\verb+.bib+ƒtƒ@ƒCƒ‹‚Å‚Í‚È‚­\verb+.bbl+ƒtƒ@ƒCƒ‹‚ğ
-•K‚¸ŠÜ‚ß‚é‚±‚Æ‚É’ˆÓ‚³‚ê‚½‚¢D
-ˆê•ûC‰½‚ç‚©‚Ì——R‚ÅthebibliographyŠÂ‹«‚Å•¶Œ£ƒŠƒXƒg‚ğ
-uèì‚èv‚µ‚È‚¯‚ê‚Î‚È‚ç‚È‚¢ê‡‚ÍC
-‚±‚ÌƒKƒCƒh‚ÌQl•¶Œ£ƒŠƒXƒg‚ğ’ˆÓ[‚­Œ©‚ÄC
-‚»‚ÌƒXƒ^ƒCƒ‹‚É‚µ‚½‚ª‚Á‚Ä‚¢‚½‚¾‚«‚½‚¢D
-
-
-
-
-%4.7.3
-\subsubsection{Ó«}
-
-Ó«‚ª‚ ‚éê‡‚É‚ÍCQl•¶Œ£ƒŠƒXƒg‚Ì’¼‘O‚É’u‚«C\|acknowledgment|ŠÂ‹«‚Ì
-’†‚É“ü‚ê‚éD‚±‚ÌŠÂ‹«‚Ì’†g‚Í“Še‚É‚Ío—Í‚³‚ê‚È‚¢D
-
-%4.8
-\subsection{’˜ÒĞ‰î}
-
-–{•¶‚ÌÅŒãi\|\end{document}| ‚Ì’¼‘Oj‚ÉCˆÈ‰º‚Ì‚æ‚¤‚É’˜ÒĞ‰î‚ğ‹Lq‚·‚éD
-
-\begin{quote}
-\|\begin{biography}|\\
-\|\profile{m}{<|‘æˆê’˜Ò–¼\|>}{|‘æˆê’˜Ò‚ÌĞ‰î\|}|\\
-\|\profile{m}{<|‘æ“ñ’˜Ò–¼\|>}{|‘æ“ñ’˜Ò‚ÌĞ‰î\|}|\\
-\|\profile{m}{<|$\dots$\|>}{|$ldots$\|}|\\
-\|\end{biography}|
-\end{quote}
-
-‚È‚¨Å‰‚Ìˆø”‚ğ•Ï‚¦‚é‚±‚Æ‚ÅC‰ïˆõí•Ê‚ª•Ï‚í‚éDŠw¶‰ïˆõ‚Ìê‡‚Í\|s|CƒtƒF
-ƒ[‚Ìê‡‚Í\|f|C”ñ‰ïˆõ‚Ìê‡‚Í\|n|‚ğ“ü‚ê‚éD
-\begin{quote}
-\|\profile{n}{<|‘æˆê’˜Ò–¼\|>}{|‘æˆê’˜Ò‚ÌĞ‰î\|}|
-\end{quote}
-‚È‚¨’˜ÒĞ‰î‚Í“Še‚É‚Ío—Í‚³‚ê‚È‚¢D
-
-%5
-\section{˜_•¶“à—e‚ÉŠÖ‚·‚éwj}
-
-˜_•¶‚Ì“à—e‚É‚Â‚¢‚ÄC˜_•¶ƒWƒƒ[ƒiƒ‹•ÒWˆÏˆõ‰ï‚Åì¬‚µ‚½u‚×‚©‚ç‚¸Wv‚ğ
-ˆÈ‰º‚É¦‚·D“Še‘O‚Ìƒ`ƒFƒbƒNƒŠƒXƒg‚Æ‚µ‚Ä—˜—p’¸‚«‚½‚¢D‚±‚êˆÈŠO‚É‚àC¸“Ç
-Ò—pCƒƒ^¸“ÇÒ—p‚Ìu‚×‚©‚ç‚¸Wv\cite{webpage2}‚àŒöŠJ‚µ‚Ä‚¢‚é‚Ì‚ÅCQ
-Æ‚³‚ê‚½‚¢D‚Ü‚½Cì•¶‹Zp‚ÉŠÖ‚·‚é \cite{book1, book2, book3, book4}‚Ì‚æ
-‚¤‚È‘Ğ‚àQl‚É‚È‚éD
-
-%5.1
-\subsection{‘‚«•û‚ÌŠî–{}
-
+ãƒªãƒãƒ£ãƒ¼ãƒ‰ãƒ»ã‚½ãƒ¼ãƒ«ãƒ»ãƒ¯ãƒ¼ãƒãƒ³ã¯å½“æ™‚éå…¬é–‹ã§ã‚ã£ãŸ \TED ã‚«ãƒ³ãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ã‚’1984å¹´ã«è¨­ç«‹ã™ã‚‹ã«ã‚ãŸã£ã¦ï¼Œ
+ä»¥ä¸‹ã®ãƒ«ãƒ¼ãƒ«ã‚’è¨­ã‘ãŸï¼
 \begin{itemize}
- \item[$\Box$] Œ¤‹†‚ÌV‹K«C—L—p«CM—Š«‚ª“ÇÒ‚É“`‚í‚é‚æ‚¤‚É‹Lq‚·‚éD
- \item[$\Box$] “Ç‚İè‚ÉC“Ç‚İ‚â‚·‚¢•¶Í‚ğS‚ª‚¯‚éi“à—e‚ª‘OŒã‚·‚éC”wŒiE
-	       ‰Û‘è‚Ìİ’è‚ª•s–¾—Ä‚È‚Ç‚Í“ÇÒ‚É‚Æ‚Á‚Ä•‰’SjD
- \item[$\Box$] ‰ğŒˆ‚·‚×‚«–â‘è‚ª”Ä—p‰»iˆê”Ê“I‚É‹Lqj‚³‚ê‚Ä‚¢‚È‚¢‚Ì‚ÍÄ
-	       l‚ğ—v‚·‚éiXX‘åŠw‚Ì–â‘è‚Æ‚¢‚¤‹Lq‚ÉInjD‚ ‚é‚¢‚ÍC
-	       i’P‚Éuì‚è‚Ü‚µ‚½v‚¾‚¯‚Åj‰ğŒˆ‚·‚×‚«–â‘è‚»‚Ì‚à‚Ì‚Ì‹Lq
-	       ‚ª‚È‚¢‚Ì‚ÍÄl‚ğ—v‚·‚éD
- \item[$\Box$] Œ‹˜_‚ª–¾Šm‚É‹L‚³‚ê‚Ä‚¢‚È‚¢C‚Ü‚½‚ÍC”ÍˆÍCŒÀŠEC–â‘è“_‚È
-	       ‚Ç‚Ìw“E‚ª“KØ‚Å‚Í‚È‚¢C‚Ü‚½‚ÍCŒ‹˜_‚ª“à—e‚É‚»‚Á‚½‚à‚Ì‚Å
-	       ‚Í‚È‚¢‚à‚Ì‚ÍÄl‚ğ—v‚·‚éD
- \item[$\Box$] ‰ÈŠw‹Zp˜_•¶‚Æ‚µ‚Ä•s“K“–‚È•\Œ»‚âC•ª‚©‚è‚É‚­‚¢•\Œ»‚ª‚ ‚é
-	       ‚Ì‚ÍÄl‚ğ—v‚·‚éD
- \item[$\Box$] ‹É’[‚ÈŒûŒê‘Ì‚âC’·•¶‚Ì˜A‘±‚È‚Ç‚ÍÄl‚ğ—v‚·‚éD
- \item[$\Box$] ÍCß‚Ì‚½‚Ä•ûC‘S‘Ì‚Ì\¬“™‚ª“KØ‚Å‚È‚¢•¶Í‚ÍÄl‚ğ—v‚·
-	       ‚éD
- \item[$\Box$] •¶’†‚Ì•¶–¬‚©‚ç„‘ª‚µ‚È‚¢‚Æ“à—e‚Ì”cˆ¬‚ª¢“ï‚È˜_•¶‚É‚µ‚È‚¢D
- \item[$\Box$] à–¾‚É”ò–ô‚µ‚½“_‚ª‚ ‚èC‰¼à“™‚Ìà–¾‚ª\•ª‚Å‚Í‚È‚¢‚Ì‚ÍÄ
-	       l‚ğ—v‚·‚éD
- \item[$\Box$] à–¾‚Éç’·‚È“_C‹t‚ÉŠÈ’P‚·‚¬‚é“_‚ª‚ ‚é‚Ì‚ÍÄl‚ğ—v‚·‚éD
- \item[$\Box$] –¢’è‹`Œê‚ğŒ¸‚ç‚·D
+\item 1å›ã®è¬›æ¼”ã®ãƒˆãƒ”ãƒƒã‚¯ã¯ã²ã¨ã¤ã ã‘ã«åˆ¶é™ã•ã‚Œã‚‹ï¼
+\item ã²ã¨ã‚Šã®è¬›æ¼”è€…ã®æŒã¡æ™‚é–“ã¯æœ€å¤§18åˆ†ã§ã‚ã‚Šï¼Œä¸€èˆ¬ã«ã¯ã‚ˆã‚ŠçŸ­ã„æŒã¡æ™‚é–“ã®ã¿ãŒä¸ãˆã‚‰ã‚Œã‚‹ï¼
+\item è³ªç–‘å¿œç­”ã®æ™‚é–“ã¯ä¸€éƒ¨ã®ä¾‹å¤–ã‚’é™¤ã„ã¦ç”¨æ„ã•ã‚Œãšï¼Œç™ºè¡¨å¾Œã®äº¤æµä¼šãŒè³ªç–‘å¿œç­”ã®æ™‚é–“ã«ã‚ã¦ã‚‰ã‚Œã‚‹ï¼
+\item è¬›æ¼”è€…ã¯æŒ¨æ‹¶ï¼Œè‡ªå·±ç´¹ä»‹ã‚’è¡Œã‚ãšï¼Œè¬›æ¼”ã®ã‚¢ã‚¦ãƒˆãƒ©ã‚¤ãƒ³ã‚’å†’é ­ã«è©±ã™ã“ã¨ã‚‚ç„¡ã„ï¼
+\item ã‚¹ãƒ©ã‚¤ãƒ‰ã‚„ãƒ“ãƒ‡ã‚ªã®ä½¿ç”¨ã¯æ¨å¥¨ã•ã‚Œã‚‹ï¼
+\item ãƒã‚¤ãƒ³ã‚¿ã¯ä½¿ç”¨ã•ã‚Œãªã„ï¼
+\item ãƒãƒ‡ã‚£ã‚¦ãƒ ã¯æ¨å¥¨ã•ã‚Œãªã„ï¼
 \end{itemize}
-
-
-%5.2
-\subsection{V‹K«‚Æ—LŒø«‚ğ–¾Šm‚É¦‚·}
-
-\begin{itemize}
- \item[$\Box$] İ—ˆŒ¤‹†‚Æ‚ÌŠÖ˜ACŒ¤‹†‚Ì“®‹@C‚Ë‚ç‚¢“™‚ª–¾Šm‚Éà–¾‚³‚ê‚Ä
-	       ‚¢‚È‚¢‚Ì‚ÍÄl‚ğ—v‚·‚éD
- \item[$\Box$] Šù’m^Œö’m‚Ì‹Zp‚ª‰½‚Å‚ ‚Á‚ÄC‰½‚ğV‚µ‚¢ƒAƒCƒfƒA‚Æ‚µ‚Ä’ñ
-	       ˆÄ‚µ‚Ä‚¢‚é‚Ì‚©‚ª‘‚©‚ê‚Ä‚¢‚È‚¢‚Ì‚ÍÄl‚ğ—v‚·‚éD
- \item[$\Box$] \•ª‚ÈQl•¶Œ£‚ÍV‹K«‚Ìå’£‚ÉŒ‡‚©‚¹‚È‚¢D
- \item[$\Box$] ’ñˆÄ“à—e‚Ìà–¾‚ªCŠT”O“I‚Ü‚½‚Í’ŠÛ“I‚È…€‚ÉIn‚µ‚Ä‚¢‚ÄC
-	       “ÇÒ‚ª’ñˆÄ“à—e‚ğ—‰ğ‚Å‚«‚È‚¢i‚»‚ê‚¾‚¯‚ÅV‹K«‚ªŠ´‚¶‚ç‚ê
-	       ‚È‚¢‚à‚Ìj‚Ì‚ÍÄl‚ğ—v‚·‚éD
- \item[$\Box$] ˜_•¶‚Å’ñˆÄ‚µ‚½•û–@‚Ì—LŒø«‚Ìå’£‚ª‚È‚¢C‚Ü‚½‚Í‚«‚í‚ß‚Ä•n
-	       ã‚È‚Ì‚ÍÄl‚ğ—v‚·‚éD
-\end{itemize}
-
-%5.3
-\subsection{‘‚«•û‚ÉŠÖ‚·‚é‹ï‘Ì“I‚È’ˆÓ}
-
-\begin{itemize}
- \item[$\Box$] ˜a•¶•W‘è‚ª“à—e‚ğ“KØ‚É•\Œ»‚µ‚Ä‚¢‚È‚¢‚Ì‚ÍÄl‚ğ—v‚·‚éD
- \item[$\Box$] ‰p•¶•W‘è‚ª“à—e‚ğ“KØ‚É•\Œ»‚µ‚Ä‚¢‚È‚¢C‚Ü‚½‚Í‰pŒê‚Æ‚µ‚Ä“K
-	       Ø‚Å‚È‚¢‚Ì‚ÍÄl‚ğ—v‚·‚éD
- \item[$\Box$] ƒAƒuƒXƒgƒ‰ƒNƒg‚ªå|‚ğ“KØ‚É•\Œ»‚µ‚Ä‚¢‚È‚¢C‚Ü‚½‚Í‰p•¶‚ª
-	       “KØ‚Å‚Í‚È‚¢‚Ì‚ÍÄl‚ğ—v‚·‚éD
- \item[$\Box$] ‹L†E—ª†“™‚ªü’m‚Ì‚à‚Ì‚Å‚È‚­C‚Ü‚½‚ÍC—pŒê‚ª“KØ‚Å‚È‚­C
-	       ‚Ü‚½‚ÍC}E•\‚Ìà–¾‚ª“K“–‚Å‚Í‚È‚¢‚Ì‚ÍÄl‚ğ—v‚·‚éD
- \item[$\Box$] ŒÂl“I‚ ‚é‚¢‚Í”ñí‚É¬‚³‚ÈƒOƒ‹[ƒv^Šé‹Æ‚¾‚¯‚Å’Ê—p‚·‚é‚æ
-	       ‚¤‚È—pŒê‚ª“Á•Ê‚Èà–¾‚à‚È‚µ‚É‘½—p‚³‚ê‚Ä‚¢‚é‚Ì‚ÍÄl‚ğ—v‚·
-	       ‚éD
- \item[$\Box$] }•\©‘Ì‚Í\•ª‚É–¾Šm‚Å‚Í‚È‚¢C‚Ü‚½‚ÍŒë‚è‚ª‚ ‚é‚Ì‚ÍÄl‚ğ
-	       —v‚·‚éD
- \item[$\Box$] }•\‚ª‘N–¾‚Å‚Í‚È‚¢‚Ì‚ÍÄl‚ğ—v‚·‚éD
- \item[$\Box$] }•\‚ª‘å‚«‚³CkÚ‚Ìw’è‚ª“KØ‚Å‚È‚¢‚Ì‚ÍÄl‚ğ—v‚·‚é.
-\end{itemize}
-
-%5.4
-\subsection{Ql•¶Œ£}
-
-\begin{itemize}
- \item[$\Box$] Ql•¶Œ£‚Í10ŒˆÈã•K—vi•ª–ì‚É‚æ‚Á‚Ä‚Í20ŒˆÈãC30ŒˆÈã
-	       ‚Æ‚¢‚¤ˆÓŒ©‚à‚ ‚éj.
- \item[$\Box$] \•ª‚ÈQl•¶Œ£‚ÍV‹K«‚Ìå’£‚ÉŒ‡‚©‚¹‚È‚¢D
- \item[$\Box$] “KØ‚È•¶Œ£‚ªˆø—p‚³‚ê‚Ä‚¨‚ç‚¸C‚»‚Ì”‚à“KØ‚Å‚Í‚È‚¢‚Ì‚ÍÄ
-	       l‚ğ—v‚·‚éD
- \item[$\Box$] “ú–{l‚É‚æ‚é‚µ‚©‚é‚×‚«˜_•¶‚ğˆø—p‚·‚é‚±‚Æ‚Å“ú–{lŒ¤‹†ƒRƒ~ƒ…
-	       ƒjƒeƒB‚Ì”­“W‚É‚Â‚È‚ª‚éD
- \item[$\Box$] Ql•¶Œ£‚Í©•ª‚Ì‚à‚Ì‚Î‚©‚è‚Å‚Í‚¾‚ßD
-\end{itemize}
-
-%5.5
-\subsection{“ñd“Še}
-
-\begin{itemize}
- \item[$\Box$] “ñd“Še‚Í‚µ‚Ä‚Í‚È‚ç‚È‚¢ „Ÿ ‚½‚¾‚µ‘Û‰ï‹c‚ÉÌ‘ğ‚³‚ê‚½˜_
-	       •¶‚ğ’˜ìŒ ‚ª–â‘è‚É‚È‚ç‚È‚¢‚æ‚¤‚É“Še‚·‚é‚±‚Æ‚Í\‚í‚È‚¢D
- \item[$\Box$] ‘¼‚Ì˜_•¶‚Æ‚Ü‚Á‚½‚­“¯‚¶}•\‚ğˆø—p‚Ì–¾¦‚È‚µ‚É—˜—p‚·‚é‚±‚Æ
-	       ‚Í‹Ö~D
- \item[$\Box$] Šù”­•\‚Ì˜_•¶“™‚Æ‚ÌŠÔ‚Éd•¡‚ª‚ ‚é‚Ì‚ÍÄl‚ğ—v‚·‚éD
-\end{itemize}
-
-%5.6
-\subsection{‘¼‚Ìl‚É“Ç‚ñ‚Å‚à‚ç‚¤}
-
-\begin{itemize}
- \item[$\Box$] “ŠeŒoŒ±‚ª­‚È‚¢l‚ÍCÌ˜^‚³‚ê‚½ŒoŒ±‚Ì–L•x‚Èl‚ÉZ³‚µ‚Ä
-	       ‚à‚ç‚¤D
- \item[$\Box$] “ÇÒ‚Ì—§ê‚©‚çŒ©‚Ä˜_—“I‚È”ò–ô‚ª‚È‚¢‚©‚É’ˆÓ‚µ‚Ä‹Lq‚·‚éD
-\end{itemize}
-
-%5.7
-\subsection{‚»‚Ì‘¼}
-
-\begin{itemize}
- \item[$\Box$] ğŒ•tÌ˜^Œã‚ÌC³‚ÅCÌ˜^ğŒˆÈŠO‚ğ——R‚à‚È‚­C³‚·‚é‚±
-	       ‚Æ‚Í‹Ö~D
- \item[$\Box$] ƒ_ƒuƒ‹ƒuƒ‰ƒCƒ“ƒh‚È‚Ì‚Å¸“ÇÒ‚Í‘I‚×‚È‚¢D
- \item[$\Box$] “Še‘O‚Éƒ`ƒFƒbƒNƒŠƒXƒg‚ÌŠe€–Ú‚ğ–‚½‚µ‚Ä‚¢‚é‚©C•K‚¸Šm”F
-	       ‚·‚éD 
-\end{itemize}
-
-%6
-\section{‚¨‚í‚è‚É}
-
-–{e‚Å‚ÍCA4cŒ^2’i‘g‚İ—p‚É•ÏX‚µ‚½ƒXƒ^ƒCƒ‹ƒtƒ@ƒCƒ‹‚ğ—p‚¢‚½˜_•¶‚ÌƒtƒH[
-ƒ}ƒbƒg•û–@‚ÆC˜_•¶ƒWƒƒ[ƒiƒ‹•ÒWˆÏˆõ‰ï‚ª‚Ü‚Æ‚ß‚½u‚×‚©‚ç‚¸Wv‚ÉŠî‚Ã‚­
-˜_•¶‚Ì‘‚«•û‚ğ¦‚µ‚½D“à—e“I‚É‚Ü‚¾•s\•ª‚Ì•”•ª‚ª‘½‚¢‚½‚ßCˆÓŒ©C—v–]“™‚ğ
+ãƒ¯ãƒ¼ãƒãƒ³ã¯ç¥çµŒç§‘å­¦ã®çŸ¥è¦‹ã‹ã‚‰18åˆ†ã¨ã„ã†é•·ã•ã‚’å‰²ã‚Šå‡ºã—ãŸã®ã§ã¯ãªãï¼Œ
+éå»ã®è‘—åãªè¬›æ¼”ã®æ®†ã©ãŒ18åˆ†ä»¥å†…ã§ã‚ã‚‹ã“ã¨ã‚’æ ¹æ‹ ã«è¬›æ¼”ã®æœ€å¤§é•·ã‚’æ±ºå®šã—ãŸã¨è€ƒãˆã‚‰ã‚Œã‚‹ï¼\cite{cg}
+ã¾ãŸ2001å¹´ã«ãƒ¯ãƒ¼ãƒãƒ³ã®å¾Œã‚’å—ã‘ãŸ \TED ã‚­ãƒ¥ãƒ¬ãƒ¼ã‚¿ã§ã‚ã‚‹
+ã‚¯ãƒªã‚¹ãƒ»ã‚¢ãƒ³ãƒ€ãƒ¼ã‚½ãƒ³ã¯ä»¥ä¸‹ã®ã‚ˆã†ã«è¿°ã¹ã¦ã„ã‚‹ï¼\cite{cgweb}
 \begin{quote}
- \|editt@ipsj.or.jp|
+It [18 minutes] is long enough to be serious and short enough to hold people's attention.
+It turns out that this length also works incredibly well online. It's the length of a 
+coffee break. So, you watch a great talk, and forward the link to two or three people. 
+It can go viral, very easily. The 18-minute length also works much like the way Twitter 
+forces people to be disciplined in what they write. By forcing speakers who are used to 
+going on for 45 minutes to bring it down to 18, you get them to really think about what 
+they want to say. What is the key point they want to communicate? It has a clarifying 
+effect. It brings discipline.
 \end{quote}
-‚Ü‚Å‚¨Šñ‚¹’¸‚«‚½‚¢D
+
+è¬›æ¼”ã®è³ªç–‘å¿œç­”æ™‚é–“ã‚’å‰Šã£ã¦ã„ã‚‹ã®ã¯ï¼Œ\TED ã‚«ãƒ³ãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ãŒç™ºè¡¨è€…ã¨è´è¬›è€…ã¨ã®ååˆ†ãªäº¤æµã«åŠ›ã‚’æ³¨ã„ã§ã„ã‚‹
+ãŸã‚ã§ã‚ã‚‹ï¼\TED ã‚«ãƒ³ãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ã§ã¯ãŠã‚ˆã5æ—¥é–“ã®ã‚«ãƒ³ãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ã«å¯¾ã—å‚åŠ è€…ã‚’1,000äººä»¥ä¸‹ã«çµã£ã¦ãŠã‚Šï¼Œ
+ã¾ãŸã‚»ãƒƒã‚·ãƒ§ãƒ³é–“ã®äº¤æµæ™‚é–“ã‚’æ¯å›1æ™‚é–“ä»¥ä¸Šã¨ã‚‹ã“ã¨ã§ï¼Œç™ºè¡¨è€…ï¼Œè´è¬›è€…ãŠã‚ˆã³è´è¬›è€…åŒå£«ã®äº¤æµæ™‚é–“ã‚’ååˆ†ã«
+ç¢ºä¿ã™ã‚‹ã‚ˆã†ã«ã—ã¦ã„ã‚‹ï¼
+
+æŒ¨æ‹¶ï¼Œè‡ªå·±ç´¹ä»‹ã®æ’é™¤ã¯ï¼Œãƒˆãƒ”ãƒƒã‚¯ã‚’ã‚¢ã‚¤ãƒ‡ã‚£ã‚¢ã«é›†ä¸­ã•ã›ã‚‹ãŸã‚ã§ã‚ã‚Šï¼Œ
+ã¾ãŸè¬›æ¼”ãã®ã‚‚ã®ã«ä½™åˆ†ãªã‚³ãƒ³ãƒ†ã‚¯ã‚¹ãƒˆã‚’æ®‹ã•ãªã„ãŸã‚ã®æªç½®ã§ã‚ã‚‹ï¼
+
+ãƒã‚¤ãƒ³ã‚¿ãŠã‚ˆã³ãƒãƒ‡ã‚£ã‚¦ãƒ ã®éæ¨å¥¨ã¯ã²ã¨ã¤ã®ç†ç”±ã«åŸºã¥ãï¼ãƒãƒ‡ã‚£ã‚¦ãƒ ã®å­˜åœ¨ã¯è¬›æ¼”è€…ã¨è´è¬›è€…ã®é–“ã«æ–‡å­—é€šã‚Šå£ã‚’
+ä½œã‚‹ã‚‚ã®ã§ã‚ã‚Šï¼Œãƒ¯ãƒ¼ãƒãƒ³ã«ã‚ˆã‚Œã°è¬›æ¼”ã«ãŠã„ã¦ã¯é¿ã‘ã‚‹ã¹ãã‚‚ã®ã§ã‚ã‚‹ï¼
+ãƒãƒ‡ã‚£ã‚¦ãƒ ãŒç„¡ã„å ´åˆï¼Œæ˜ åƒã‚’é€ã‚Šå‡ºã™è£…ç½®(PC)ã¯æ‰‹å…ƒã«ç„¡ã„ãŸã‚ãƒã‚¤ãƒ³ã‚¿ã¯ãƒ¬ãƒ¼ã‚¶ãƒã‚¤ãƒ³ã‚¿ã‚’ä½¿ã£ã¦
+å…‰å­¦çš„ã«é‡ç•³ã™ã‚‹ã“ã¨ã«ãªã‚‹ãŒï¼Œã“ã‚Œã¯è¤‡æ•°ã‚¹ã‚¯ãƒªãƒ¼ãƒ³ã«å¯¾å¿œã›ãšï¼Œ
+ã¾ãŸå¾Œã«è¿°ã¹ã‚‹ãƒ“ãƒ‡ã‚ªã‚¢ãƒ¼ã‚«ã‚¤ãƒ–ã«ã‚‚ãƒã‚¤ãƒ³ã‚¿è»Œè·¡ã‚’æ®‹ã™ã“ã¨ãŒå›°é›£ã§ã‚ã‚‹ãŸã‚æ¨å¥¨ã•ã‚Œãªã„ï¼
+
+å°å…¥ï¼Œé–¢é€£ç ”ç©¶ï¼ŒåŸç†ï¼Œå®Ÿé¨“æ–¹æ³•ï¼Œå®Ÿé¨“çµæœï¼Œè€ƒå¯Ÿï¼Œçµè¨€ã¨è¨€ã£ãŸç†å·¥ç³»è«–æ–‡ã«è¦‹ã‚‰ã‚Œã‚‹ç« ç«‹ã¦ã¯ç”¨ã„ã‚‰ã‚Œãªã„ï¼
+ã‚ãˆã¦ç†å·¥ç³»è«–æ–‡ã®ç« ç«‹ã¦ã«å½“ã¦ã¯ã‚ã‚‹ã¨ï¼Œ\TED ã§è¡Œã‚ã‚Œã‚‹è¬›æ¼”ã¯å°å…¥éƒ¨ã®ã¿ã§ã‚ã‚‹ï¼
+
+\subsection{ãƒ“ãƒ‡ã‚ªã‚¢ãƒ¼ã‚«ã‚¤ãƒ–}
+
+\TED ã‚«ãƒ³ãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ã¯2006å¹´ã‹ã‚‰è¬›æ¼”ã®ãƒ“ãƒ‡ã‚ªã‚¢ãƒ¼ã‚«ã‚¤ãƒ–ã‚’ã‚¯ãƒªã‚¨ã‚¤ãƒ†ã‚£ãƒ–ãƒ»ã‚³ãƒ¢ãƒ³ã‚º (CC-BY-NC-ND) ãƒ©ã‚¤ã‚»ãƒ³ã‚¹
+ä¸‹ã§ç„¡å„Ÿå…¬é–‹ã—ã¦ã„ã‚‹ï¼ï¼ˆä¸€éƒ¨ã®å‹•ç”»ã¯ãƒ€ãƒ–ãƒ«ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã«ã‚ˆã‚‹å…¬é–‹ã‚’è¡Œã£ã¦ã„ã‚‹ï¼ï¼‰
+
+ãƒ“ãƒ‡ã‚ªã‚¢ãƒ¼ã‚«ã‚¤ãƒ–å…¬é–‹ã®ç›®çš„ã¯ã‚¢ã‚¤ãƒ‡ã‚£ã‚¢ã®å…±æœ‰ã§ã‚ã‚‹ãŒï¼Œãã‚ŒãŒ \TED ãƒ“ãƒ‡ã‚ªã§ã‚ã‚‹ã“ã¨ã‚’ç¤ºã™æ§˜ã€…ãªå·¥å¤«ãŒ
+ç››ã‚Šè¾¼ã¾ã‚Œã¦ã„ã‚‹ï¼
+
+è¬›æ¼”è€…ã¯ä¸¸ã„èµ¤çµ¨æ¯¯ã®ä¸Šã«ç«‹ã¤ï¼èµ¤çµ¨æ¯¯ã®ã‚µã‚¤ã‚ºã¯ç›´å¾„2.5[m]ã‹ã‚‰5[m]ç¨‹åº¦ã¾ã§æ¯å›ç•°ãªã‚‹ï¼
+èµ¤çµ¨æ¯¯ã¯è¬›æ¼”è€…ã®ç§»å‹•ç¯„å›²ã‚’åˆ¶é™ã—ï¼Œãã‚Œã«ã‚ˆã£ã¦ç…§æ˜ãŠã‚ˆã³ã‚«ãƒ¡ãƒ©ã®ç…§æº–ã‚’æ±ºã‚ã‚„ã™ãã—ã¦ã„ã‚‹ï¼
+
+ã‚«ãƒ¡ãƒ©ã¯å‰æ–¹4å°ï¼Œå¾Œæ–¹1å°ã®åˆè¨ˆ5å°ã‚’ç”¨ã„ã‚‹ã“ã¨ãŒå¤šãï¼Œå‰æ–¹ã®1å°ã¯ã‚¯ãƒ¬ãƒ¼ãƒ³ï¼Œãƒ¬ãƒ¼ãƒ«ã‚’ç”¨ã„ã‚‹ã“ã¨ãŒå¤šã„ï¼
+ã“ã‚Œã¯ä¸€èˆ¬çš„ãªè¬›æ¼”ã®æ’®å½±ã¨ï¼ŒéŸ³æ¥½ã‚³ãƒ³ã‚µãƒ¼ãƒˆã®æ’®å½±ã®ä¸­é–“ç¨‹åº¦ã®è¨­å‚™ã§ã‚ã‚‹ï¼
+
+ã¾ãŸ \TED ãƒ“ãƒ‡ã‚ªã®ç‰¹å¾´ã¨ã—ã¦ï¼Œå®¢å¸­ã«é’ã„ç…§æ˜ã‚’ã‚ã¦ã‚‹ã“ã¨ãŒã‚ã’ã‚‰ã‚Œã‚‹ï¼
+è¬›æ¼”è€…ã®èµ¤çµ¨æ¯¯ã¨ã®ã‚«ãƒ©ãƒ¼ã®ã‚³ãƒ³ãƒˆãƒ©ã‚¹ãƒˆã‚‚ã‚ã‚‹ãŒï¼Œé’ã„ç…§æ˜ã§å®¢å¸­ã®ç…§åº¦ã‚’ä¸Šã’ã¤ã¤ï¼Œ
+è¦–è¦šçš„ã«ã¯æš—ã„ã¨ã„ã†å°è±¡ã‚’ä¸ãˆã‚‹ãŸã‚ã§ã‚ã‚‹ï¼
+å®¢å¸­ã«ã¯é’ç…§æ˜ã«ã‚ˆã£ã¦ååˆ†ãªç…§åº¦ãŒä¸ãˆã‚‰ã‚Œã‚‹ãŸã‚ï¼Œ
+ãƒ“ãƒ‡ã‚ªã‚¢ãƒ¼ã‚«ã‚¤ãƒ–ã‚’è¦‹ã‚‹ã¨è´è¬›è€…ã®è¡¨æƒ…ã‚’èª­ã¿å–ã‚‹ã“ã¨ãŒå‡ºæ¥ï¼Œ
+è´è¬›è€…ã‚‚ã¾ãŸã‚«ãƒ³ãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ã®ä¸€éƒ¨ã§ã‚ã‚‹ã“ã¨ãŒãƒ“ãƒ‡ã‚ªã‚’é€šã—ã¦ä¼ã‚ã‚‹ï¼
+
+è¬›æ¼”è€…ãŒ18åˆ†ã‚’è¶…ãˆã‚‹è¬›æ¼”ã‚’è¡Œã£ãŸå ´åˆã§ã‚‚ï¼Œãƒ“ãƒ‡ã‚ªã‚¢ãƒ¼ã‚«ã‚¤ãƒ–ã¯18åˆ†ã«åˆ¶é™ã•ã‚Œã‚‹ï¼
 
 
+% Non commercial
+
+\subsection{TEDx}
+
+\TED ã‚«ãƒ³ãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ãŒ2009å¹´ã«ãƒ‘ãƒˆãƒªãƒƒã‚¯ãƒ»ãƒ‹ãƒ¥ãƒ¼ã‚¦ã‚§ãƒ« (Patrick Newel) ã¨ãƒˆãƒƒãƒ‰ãƒ»
+ãƒãƒ¼ã‚¿ãƒ¼ (Tod Porter) ã« independently organized TED event ã¨
+ã—ã¦ã® \TEDxTokyo ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã‚’ä¸ãˆãŸã®ãŒ \TEDx ã‚¤ãƒ™ãƒ³ãƒˆã®å§‹ã¾ã‚Šã§ã‚ã‚‹ï¼
+
+\TEDx ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ä¿æŒè€…ã¯ \TED ã‚«ãƒ³ãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ãŒæç¤ºã™ã‚‹ \TEDx ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã«å¾“ã‚ã­ã°ãªã‚‰ãªã„ï¼ \TEDx ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã¯1å¹´é–“
+æœ‰åŠ¹ã§ï¼Œæˆä¸ï¼Œæ›´æ–°ï¼Œè­²æ¸¡ã®å¯å¦ã®åˆ¤æ–­ã¯ \TED ã‚«ãƒ³ãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ã«å§”ã­ã‚‰ã‚Œã‚‹ï¼
+
+
+
+
+
+\section{ãŠã‚ã‚Šã«}
+
+...
 
 \begin{acknowledgment}
-A4‰¡Œ^‚É‘Î‚·‚éƒKƒCƒh‚ğŠî‚ÉC–{e‚ğì¬‚µ‚½D
-ƒNƒ‰ƒXƒtƒ@ƒCƒ‹‚Ìì¬‚É‚¨‚¢‚Ä‚ÍC
-‹“s‘åŠw‚Ì’†“‡@_‚É‚³‚Ü‚´‚Ü‚È‚²‹³¦‚ğ’¸‚«C
-‚³‚ç‚ÉBiB\TeX ŠÖ˜Aƒtƒ@ƒCƒ‹‚Ì—˜—p‚É‚Â‚¢‚Ä‚à‰õ‘ø’¸‚¢‚½‚±‚Æ‚ğ[Ó‚·‚éD
-‚Ü‚½CA4‰¡Œ^‚É‘Î‚·‚éƒKƒCƒh‚ğì¬‚³‚ê‚½“–‚Ì•ÒWˆÏˆõ‰ï‚Ì’S“–Ò‚É[Ó‚·‚éD
+...
 \end{acknowledgment}
 
 
 
 \begin{thebibliography}{10}
 
-%\bibitem{latex}
-%Lamport, L.: {\em A Document Preparation System \LaTeX User's Guide \&
-%  Reference Manual}, Addison Wesley, Reading, Massachusetts (1986).
-% iCooke, E., et al.–óF•¶‘ˆ—ƒVƒXƒeƒ€ \LaTeXCƒAƒXƒL[o”Å‹Ç
-%  (1990)j.
+\bibitem{a}
+ã‚¢ãƒªã‚¹ãƒˆãƒ†ãƒ¬ãƒ¼ã‚¹: è©©å­¦; å²©æ³¢æ›¸åº—, 1997.
 
-%\bibitem{total}
-%ˆÉ“¡˜alF \LaTeX ƒg[ƒ^ƒ‹ƒKƒCƒhCG˜aƒVƒXƒeƒ€ƒgƒŒ[ƒfƒBƒ“ƒO (1991).
-%\bibitem{nodera}
-%–ì›—²uFŠyX \LaTeXC‹¤—§o”Å (1990).
+\bibitem{nu}
+ä¸Šç”°ä¿¡è¡Œ, ä¸­åŸæ·³: ãƒ—ãƒ¬ã‚¤ãƒ•ãƒ«ãƒ»ãƒ©ãƒ¼ãƒ‹ãƒ³ã‚°; ä¸‰çœå ‚, 2012.
 
-\bibitem{okumura}
-‰œ‘º°•FF‰ü’ù‘æ5”Å \LaTeXe ”ü•¶‘ì¬“ü–åC
-‹Zp•]˜_Ğ(2010).
+\bibitem{rsw}
+Richard Saul Wurman: \textit{Information Architects;}
+Graphis Inc., 1997.
 
-\bibitem{companion}
-Goossens, M., Mittelbach, F. and Samarin, A.:
-{\it The LaTeX Companion},
-Addison Wesley, Reading, Massachusetts (1993).
+\bibitem{cg}
+Camine Gallo: \textit{Talk like TED: The 9 Public-Speaking Secrets of the World's Top Minds;}
+St. Martin's Press, 2014.
 
-\bibitem{book1}
-–Ø‰º¥—YF
-—‰ÈŒn‚Ìì•¶‹ZpC
-’†ŒöV‘(1981).
+\bibitem{cgweb}
+Camine Gallo: \textit{The Science Behind TED's 18-Minute Rule;}
+\urle{http://www.linkedin.com/today/post/article/20140313205730-5711504-the-science-behind-ted-s-18-minute-rule}
+(2014-07-21).
 
-\bibitem{book2}
-Strunk W. J. and White E.B.:
-{\it The Elements of Style, Forth Edition},
-Longman (2000).
-
-\bibitem{book3}
-Blake G. and Bly R.W.:
-{\it The Elements of Technical Writing},
-Longman (1993).
-
-\bibitem{book4}
-Higham N.J.:
-{\it Handbook of Writing for the Mathematical Sciences},
-SIAM (1998).
-
-\bibitem{webpage1}
-î•ñˆ—Šw‰ï˜_•¶ƒWƒƒ[ƒiƒ‹•ÒWˆÏˆõ‰ïF
-“ŠeÒƒ}ƒjƒ…ƒAƒ‹(online)C
-\urlj{http://www.ipsj.or.jp/journal /submit/manual/j\_manual.html}
-(2007.04.05).
-
-\bibitem{webpage2}
-î•ñˆ—Šw‰ï˜_•¶ƒWƒƒ[ƒiƒ‹•ÒWˆÏˆõ‰ïF
-‚×‚©‚ç‚¸W(online)C
-\urlj{http://www.ipsj.or.jp/journal/manual /bekarazu.html}
-(2011.09.15).
+\bibitem{historyofted}
+TED: \textit{History of TED (online);}
+\urle{https://www.ted.com/about/our-organization/history-of-ted} (2014-07-21).
 
 \end{thebibliography}
 
 
 
-\pagebreak%%!!!
-\vspace*{-\baselineskip}%%!!!
 
-\appendix
-%7
-\section{•t˜^‚Ì‘‚«•û}
-
-•t˜^‚ª‚ ‚éê‡‚É‚ÍCQl•¶Œ£ƒŠƒXƒg‚Ì’¼Œã‚ÉƒRƒ}ƒ“ƒh \|\appendix| ‚Éˆø‚«‘±
-‚¢‚Ä‘‚­D•t˜^‚Å‚ÍC\|\section| ƒRƒ}ƒ“ƒh‚ª{\bf A.1}C{\bf A.2}‚È‚Ç‚ÌŒ©o
-‚µ‚ğ¶¬‚·‚éD
-
-%7.1
-\subsection{Œ©o‚µ‚Ì—á}
-
-•t˜^‚Ì \|\subsetion| ‚Å‚Í‚±‚Ì‚æ‚¤Œ©o‚µ‚É‚È‚éD
-
-%8
-\section{Œ¤‹†‰ï˜_•¶—pƒRƒ}ƒ“ƒh}
-\label{sig}
-
-ŠeŒ¤‹†‰ï˜_•¶iƒgƒ‰ƒ“ƒUƒNƒVƒ‡ƒ“j‚É‚ÍŠeX‚ÉŒÅ—L‚ÌƒTƒuƒ^ƒCƒgƒ‹C—ªÌC’Ê
-”Ô‚ª‚ ‚éDÅIŒ´e‚Å‚ÍCˆÈ‰º‚ÌƒRƒ}ƒ“ƒh‚ğ \|\documentclass| ‚Ì{\bf ƒIƒvƒVƒ‡
-ƒ“}‚Æ‚·‚é‚±‚Æ‚ÅC‚±‚ê‚ç‚Ìî•ñ‚ğ—^‚¦‚éD
-
-\begin{itemize}
-\item \|PRO|iƒvƒƒOƒ‰ƒ~ƒ“ƒOj
-\item \|TOM|i”—ƒ‚ƒfƒ‹‰»‚Æ‰—pj
-\item \|TOD|iƒf[ƒ^ƒx[ƒXj
-\item \|ACS|iƒRƒ“ƒsƒ…[ƒeƒBƒ“ƒOƒVƒXƒeƒ€j
-\item \|CDS|iƒRƒ“ƒVƒ…[ƒ}EƒfƒoƒCƒX\,\&\,ƒVƒXƒeƒ€j
-\item \|TBIO|iBioinformaticsj\footnote{%
-TBIO, SLDM, CVA‚Í‰p•¶˜_•¶‚Å‚ ‚é‚Ì‚Å˜a–¼‚Í‚È‚¢D}
-\item \|SLDM|iSystem LSI Design Methodologyj\footnotemark[5]
-\item \|CVA|iComputer Vision and Applicaitonsj\footnotemark[5]
-\end{itemize}
-
-‚Ü‚½‰p•¶˜_•¶ì¬‚ÌÛ‚É‚Í \|english| ‚ğƒIƒvƒVƒ‡ƒ“‚É’Ç‰Á‚·‚ê‚Î‚æ‚¢D‚µ‚½‚ª‚Á
-‚ÄC\|\documentclass[PRO]{ipsj}| ‚Æ‚·‚ê‚ÎuƒvƒƒOƒ‰ƒ~ƒ“ƒOv‚Ì˜a•¶—pC
-\|\documentclass[PRO,english]| \|{ipsj}| ‚Æ‚·‚ê‚Î‰p•¶—p‚Æ‚È‚éD
-
-‚Ü‚½Œ¤‹†‰ï‚É‚Íu†v‚Æ˜A“®‚µ‚È‚¢u”­sŒv‚ª‚ ‚é‚½‚ßCŠw‰ï‚ ‚é‚¢‚Í•ÒWˆÏ
-ˆõ‰ï‚Ìw¦‚ÉŠî‚Ã‚«C”­sŒ‚ğ
-%
-\begin{itemize}\item[]
-\|\setcounter{|{\bf Œ”}\|}{<”­sŒ>}|
-\end{itemize}
-%
-‚É‚æ‚Á‚Äw’è‚·‚éD
-
-‚±‚Ì‘¼CˆÈ‰º‚ÌŠeß‚Å¦‚·‚æ‚¤‚ÉC‚¢‚­‚Â‚©‚Ì˜_•¶‚ÉŒÅ—L‚Ì‹@”\‚ğÀŒ»‚·‚é‚½
-‚ß‚ÌƒRƒ}ƒ“ƒh‚È‚Ç‚ª—pˆÓ‚³‚ê‚Ä‚¢‚éD
-
-%\newpage%%
-
-%9
-\section{Še•ªûŒÅ—LƒRƒ}ƒ“ƒh}
-
-Še•ªû‚É‚æ‚Á‚Ä‚»‚ê‚¼‚ê×‚©‚¢d—l‚ªˆá‚¤‚½‚ßC“¯‚¶ƒRƒ}ƒ“ƒh‚Å‚ào—ÍŒ‹‰Ê‚ªˆÙ
-‚È‚éê‡‚ª‚ ‚éD‚Ü‚½uÄó•tvCuÄXó•tv‚ª“ü‚éê‡‚ª‚ ‚èC‚»‚ê‚ç‚Í
-
-\noindent
-˜a•¶‚Å‚Í
-\begin{itemize}\item[]
-\|\|{\bf Äó•t}\|{<”N>}{<Œ>}{<“ú>}|\\
-\|\|{\bf ÄÄó•t}\|{<”N>}{<Œ>}{<“ú>}|
-\end{itemize}
-‰p•¶‚Å‚Í
-\begin{itemize}\item[]
-\|\|{\bf rereceived}\|{<”N>}{<Œ>}{<“ú>}|\\
-\|\|{\bf rerereceived}\|{<”N>}{<Œ>}{<“ú>}|
-\end{itemize}
-‚ÆƒvƒŠƒAƒ“ƒuƒ‹‚É’Ç‰Á‚·‚éD
-
-%9.1
-\subsection{\<uƒvƒƒOƒ‰ƒ~ƒ“ƒOiPROjvŒÅ—L‹@”\}
-
-\<u˜_•¶FƒvƒƒOƒ‰ƒ~ƒ“ƒOv‚É‚Í˜_•¶ˆÈŠO‚ÉCƒvƒƒOƒ‰ƒ~ƒ“ƒOŒ¤‹†‰ï‚Å‚ÌŒ¤‹†
-”­•\‚Ì“à—e[ŠT‚ªŠÜ‚Ü‚ê‚Ä‚¢‚éD‚±‚Ì“à—e[ŠT‚ÍC\|\documentclass|‚ÌƒIƒvƒVƒ‡
-ƒ“‚Æ‚µ‚Ä\|abstract|‚ğw’è‚·‚éD\ref{config}~ß‚Ì\|\maketitle|‚Ü‚Å‚Ì“à—e
-‚©‚ç‚È‚éƒtƒ@ƒCƒ‹i‚·‚È‚í‚¿–{•¶‚ª‚È‚¢ƒtƒ@ƒCƒ‹j‚©‚ç¶¬‚·‚éD‚È‚¨\|\|{\bf 
-ó•t}‚â\|\|{\bf Ì˜^}‚Í•s—v‚Å‚ ‚é‚ªC‘ã‚í‚è‚É”­•\”NŒ“ú‚ğC
-
-\noindent
-˜a•¶‚Å‚Í
-\begin{itemize}\item[]
-\|\|{\bf ”­•\}\|{<”N>}{<Œ>}{<“ú>}|
-\end{itemize}
-‰p•¶‚Å‚Í
-\begin{itemize}\item[]
-\|\|{\bf Presents}\|{<”N>}{<Œ>}{<“ú>}|
-\end{itemize}
-‚É‚æ‚èw’è‚·‚éD
-
-%9.1
-\subsection{\<uƒf[ƒ^ƒx[ƒXiTODjvŒÅ—L‹@”\}
-
-\<u˜_•¶Fƒf[ƒ^ƒx[ƒXv‚Ì˜_•¶‚Ì’S“–•ÒWˆÏˆõ‚ÍC
-\begin{itemize}\item[]
-\|\Editor{<–¼>}|
-\end{itemize}
-‚É‚æ‚èw’è‚·‚éD˜a•¶‚Å‚Íu’S“–•ÒWˆÏˆõvC‰p•¶‚Å‚ÍuEditor in Charge:v
-‚Æ“ü‚éD
-
-‚Ü‚½ƒXƒ^ƒCƒ‹‚Ì•ÏX‚É”º‚¢C\underline{–{•¶‚ÌÅŒã}‚É“ü‚é‚Ì‚ÅC
-\|\end{document}|‚Ì‘O‚É’¼Ú’u‚­D
-
-%9.2
-\subsection{\<uƒRƒ“ƒVƒ…[ƒ}EƒfƒoƒCƒX\,\&\,ƒVƒXƒeƒ€iCDSjvŒÅ—L‹@”\}
-
-\<u˜_•¶FƒRƒ“ƒVƒ…[ƒ}EƒfƒoƒCƒX\,\&\,ƒVƒXƒeƒ€v‚Å‚ÍC
-˜_•¶‚Ìí—Ş‚É‚æ‚Á‚ÄŒ©o‚µ‚ª•Ï‚í‚é‚½‚ßC
-ƒIƒvƒVƒ‡ƒ“‚ÅØ‘Ö‚¦‚ğs‚¤D
-
-Šeí•Ê‚Í
-\begin{itemize}
-\item \|systems  |ƒRƒ“ƒVƒ…[ƒ}EƒVƒXƒeƒ€˜_•¶\\
-\|         |Paper on Consumer Systems
-
-\item \|services |ƒRƒ“ƒVƒ…[ƒ}EƒT[ƒrƒX˜_•¶\\
-\|         |Paper on Consumer Services
-
-\item \|devices  |ƒRƒ“ƒVƒ…[ƒ}EƒfƒoƒCƒX˜_•¶\\
-\|         |Paper on Consumer Devices
-
-\item \|research |Œ¤‹†˜_•¶\\
-\|         |Research Paper
-\end{itemize}
-‚Æ‚È‚éD
-
-˜a•¶‚ÌƒRƒ“ƒVƒ…[ƒ}EƒVƒXƒeƒ€˜_•¶‚È‚çC\\
-\|\documentclass[CDS,systems]{ipsj}|
-‚Æ‚È‚èC‰p•¶Œ´e‚È‚ç \|english|‚ğ’Ç‰Á‚·‚ê‚Î‚æ‚¢D
-
-%9.3
-\subsection{\<uBioinformaticsiTBIOjvŒÅ—L‹@”\}
-
-Trans.\ Bioinformatics (TBIO)‚Í‰p•¶˜_•¶‚Å‚ ‚é‚Ì‚ÅC\|TBIO|ƒIƒvƒVƒ‡ƒ“‚Ì
-w’è‚É‚æ‚Á‚Ä©“®“I‚É\|english|ƒIƒvƒVƒ‡ƒ“‚ªw’è‚³‚ê‚½‚à‚Ì‚Æ‚İ‚È‚³‚êC
-\|english| ƒIƒvƒVƒ‡ƒ“‚ÌÈ—ª‚ª‰Â”\D
-
-˜_•¶í•Ê‚ÍˆÈ‰º‚Ì3íD
-\begin{itemize}
-\item \makebox[4.9zw][l]{w’è‚È‚µ} Original Paper (Default)
-\item \|Data     | Database/Software Paper
-\item \|Survey   | Survey Paper
-\end{itemize}
-
-\|\documentclass[TBIO]{ipsj}|‚ÅOriginal PaperC\\
-\|\documentclass[TBIO,Survey]{ipsj}|‚ÅSurvey Paper‚Æ‚È‚éD
-
-‚Ü‚½C’S“–•ÒWˆÏˆõ‚ÍTOD“¯—lC\|\Editor|‚Å’è‹`‚·‚é‚ªCuCommunicated byv
-‚Æ‚È‚éDTOD“¯—lC\|\end{document}|‚Ì‘O‚É’¼Ú’u‚­D
-
-%9.4
-\subsection{\<uComputer Vision and Applicaitons\\\<iCVAjvŒÅ—L‹@”\}
-
-Trans.\ CVA‚à‰p•¶˜_•¶‚Å‚ ‚é‚½‚ßC\|english| ƒIƒvƒVƒ‡ƒ“‚ÌÈ—ª‚ª‰ÂD
-
-˜_•¶í•Ê‚Í3í—Ş‚ ‚èC
-\begin{itemize}
-\item \makebox[4.9zw][l]{w’è‚È‚µ} Regular Paper (Default)
-\item \|Research | Research Paper
-\item \|system   | Systems Paper
-\end{itemize}
-‚Æ‚È‚éD
-
-TBIO“¯—lC’S“–•ÒWˆÏˆõ‚ª“ü‚èC
-‘}“ü•¶Í‚àTBIO“¯—lCuCommunicated byv‚Æ‚È‚éD
-
-%9.5
-\subsection{\<uSystem LSI Design MethodologyiSLDMjvŒÅ—L‹@”\}
-
-Trans.\ SLDM‚à‰p•¶˜_•¶‚Å‚ ‚é‚½‚ßC\|english| ƒIƒvƒVƒ‡ƒ“‚ÌÈ—ª‚ª‰ÂD
-
-˜_•¶í•Ê‚Í2í—Ş‚ ‚èC
-\begin{itemize}
-\item \makebox[4.9zw][l]{w’è‚È‚µ} Regular Paper (Default)
-\item \|Short    | Short Paper
-\end{itemize}
-‚Æ‚È‚éD
-
-SLDM‚à’S“–•ÒWˆÏˆõ‚ª“ü‚é‚ª‘}“ü•¶Í‚ª˜_•¶‚É‚æ‚Á‚Ä©“®‘}“ü•¶Í‚ªˆÙ‚È‚éD
-
-’Êí‚ÍuRecommended by Associate Editor:vC\|invited|‚ÌƒIƒvƒVƒ‡ƒ“‚ª“ü‚Á
-‚½ê‡‚Ì‚İCuInvited by Editor-in-Chief:v‚Æ‚È‚éD
-
-
-
-%% ˆÈ‰º‚Í–³‹‚³‚ê‚Ü‚·
+%% ä»¥ä¸‹ã¯ç„¡è¦–ã•ã‚Œã¾ã™
 
 \begin{biography}
-\profile{m}{î•ñ ‘¾˜Y}{1970”N¶D1992”Nî•ñˆ—‘åŠw—Šw•”î•ñ‰ÈŠw‰È‘²D
-1994”N“¯‘å‘åŠw‰@Cm‰Û’ö—¹D“¯”Nî•ñˆ—Šw‰ï“üĞDƒIƒ“ƒ‰ƒCƒ“o”Å‚ÌŒ¤‹†
-‚É]–D“dqî•ñ’ÊMŠw‰ïCIEEECACM Še‰ïˆõ}
+\profile{m}{æƒ…å ± å¤ªéƒ}{1970å¹´ç”Ÿï¼1992å¹´æƒ…å ±å‡¦ç†å¤§å­¦ç†å­¦éƒ¨æƒ…å ±ç§‘å­¦ç§‘å’ï¼
+1994å¹´åŒå¤§å¤§å­¦é™¢ä¿®å£«èª²ç¨‹äº†ï¼åŒå¹´æƒ…å ±å‡¦ç†å­¦ä¼šå…¥ç¤¾ï¼ã‚ªãƒ³ãƒ©ã‚¤ãƒ³å‡ºç‰ˆã®ç ”ç©¶
+ã«å¾“äº‹ï¼é›»å­æƒ…å ±é€šä¿¡å­¦ä¼šï¼ŒIEEEï¼ŒACM å„ä¼šå“¡}
 %
-\profile{n}{ˆ— ‰Ôq}{1960”N¶D1982”Nî•ñˆ—‘åŠw—Šw•”î•ñ‰ÈŠw‰È‘²D
-1984”N“¯‘å‘åŠw‰@Cm‰Û’ö—¹D1987”N“¯”m‰Û’ö—¹D—Šw”mD1987”Nî•ñˆ
-—‘åŠw•èD1992”N‰Ë‹ó‘åŠw•‹³öD1997”N“¯‘å‹³öDƒIƒ“ƒ‰ƒCƒ“o”Å‚ÌŒ¤‹†
-‚É]–D2010”Nî•ñˆ—‹L”OÜóÜD“dqî•ñ’ÊMŠw‰ïCIEEECIEEE-CSCACM
-Še‰ïˆõ}
+\profile{n}{å‡¦ç† èŠ±å­}{1960å¹´ç”Ÿï¼1982å¹´æƒ…å ±å‡¦ç†å¤§å­¦ç†å­¦éƒ¨æƒ…å ±ç§‘å­¦ç§‘å’ï¼
+1984å¹´åŒå¤§å¤§å­¦é™¢ä¿®å£«èª²ç¨‹äº†ï¼1987å¹´åŒåšå£«èª²ç¨‹äº†ï¼ç†å­¦åšå£«ï¼1987å¹´æƒ…å ±å‡¦
+ç†å¤§å­¦åŠ©æ‰‹ï¼1992å¹´æ¶ç©ºå¤§å­¦åŠ©æ•™æˆï¼1997å¹´åŒå¤§æ•™æˆï¼ã‚ªãƒ³ãƒ©ã‚¤ãƒ³å‡ºç‰ˆã®ç ”ç©¶
+ã«å¾“äº‹ï¼2010å¹´æƒ…å ±å‡¦ç†è¨˜å¿µè³å—è³ï¼é›»å­æƒ…å ±é€šä¿¡å­¦ä¼šï¼ŒIEEEï¼ŒIEEE-CSï¼ŒACM
+å„ä¼šå“¡}
 %
-\profile{s}{Šw‰ï Ÿ˜Y}{1950”N¶D1974”N‰Ë‹ó‘åŠw‘åŠw‰@Cm‰Û’ö—¹D
-1987”N“¯”m‰Û’ö—¹DHŠw”mD1977”N‰Ë‹ó‘åŠw•èD1992”Nî•ñˆ—‘åŠw•
-‹³öD1987”N“¯‘å‹³öD2000”N‚©‚çî•ñˆ—Šw‰ïŒÚ–âDƒIƒ“ƒ‰ƒCƒ“o”Å‚ÌŒ¤‹†
-‚É]–D2010”Nî•ñˆ—‹L”OÜóÜDî•ñˆ—Šw‰ï—–D“dqî•ñ’ÊMŠw‰ïC
-IEEECIEEE-CSCACM Še‰ïˆõ}
+\profile{s}{å­¦ä¼š æ¬¡éƒ}{1950å¹´ç”Ÿï¼1974å¹´æ¶ç©ºå¤§å­¦å¤§å­¦é™¢ä¿®å£«èª²ç¨‹äº†ï¼
+1987å¹´åŒåšå£«èª²ç¨‹äº†ï¼å·¥å­¦åšå£«ï¼1977å¹´æ¶ç©ºå¤§å­¦åŠ©æ‰‹ï¼1992å¹´æƒ…å ±å‡¦ç†å¤§å­¦åŠ©
+æ•™æˆï¼1987å¹´åŒå¤§æ•™æˆï¼2000å¹´ã‹ã‚‰æƒ…å ±å‡¦ç†å­¦ä¼šé¡§å•ï¼ã‚ªãƒ³ãƒ©ã‚¤ãƒ³å‡ºç‰ˆã®ç ”ç©¶
+ã«å¾“äº‹ï¼2010å¹´æƒ…å ±å‡¦ç†è¨˜å¿µè³å—è³ï¼æƒ…å ±å‡¦ç†å­¦ä¼šç†äº‹ï¼é›»å­æƒ…å ±é€šä¿¡å­¦ä¼šï¼Œ
+IEEEï¼ŒIEEE-CSï¼ŒACM å„ä¼šå“¡}
 %
 \end{biography}
 

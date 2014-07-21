@@ -199,7 +199,7 @@
   \setlength{\@tombowwidth}{\z@}%
   \maketombowbox}
 \DeclareOption{tate}{%
-  \AtBeginDocument{\tate\message{sc‘gƒ‚[ƒht}%
+  \AtBeginDocument{\tate\message{ã€Šç¸¦çµ„ãƒ¢ãƒ¼ãƒ‰ã€‹}%
                    \adjustbaseline}%
 }
 \DeclareOption{oneside}{\@twosidefalse}
@@ -995,35 +995,35 @@
 %
 \def\SIGHead{\ifDS@english%
 {IPSJ Transactions on}%
-\else î•ñˆ—Šw‰ï˜_•¶\fi}%%
+\else æƒ…å ±å‡¦ç†å­¦ä¼šè«–æ–‡èªŒ\fi}%%
 
 
 \def\signame@DAM{\ifDS@english%
 Electronic Preprint for Journal of Information Processing%
-\else î•ñˆ—Šw‰ï˜_•¶\fi}%%
+\else æƒ…å ±å‡¦ç†å­¦ä¼šè«–æ–‡èªŒ\fi}%%
 
 \ifDS@english
 \newcommand{\COMS}{Consumer Devices \& Systems}
 \else
-\newcommand{\COMS}{ƒRƒ“ƒVƒ…[ƒ}EƒfƒoƒCƒX\,\&\,ƒVƒXƒeƒ€}
+\newcommand{\COMS}{ã‚³ãƒ³ã‚·ãƒ¥ãƒ¼ãƒãƒ»ãƒ‡ãƒã‚¤ã‚¹\,\&\,ã‚·ã‚¹ãƒ†ãƒ }
 \fi
 
 
 \def\signame@ACS{\ifDS@english%
 {{{\SIGHead} Advanced Computing Systems}}%
-\else {\SIGHead}\hskip12\JQ ƒRƒ“ƒsƒ…[ƒeƒBƒ“ƒOƒVƒXƒeƒ€\fi}%
+\else {\SIGHead}\hskip12\JQ ã‚³ãƒ³ãƒ”ãƒ¥ãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã‚·ã‚¹ãƒ†ãƒ \fi}%
 %
 \def\signame@PRO{\ifDS@english%
 {{{\SIGHead} Programming}}%
-\else {\SIGHead}\hskip12\JQ ƒvƒƒOƒ‰ƒ~ƒ“ƒO\fi}%
+\else {\SIGHead}\hskip12\JQ ãƒ—ãƒ­ã‚°ãƒ©ãƒŸãƒ³ã‚°\fi}%
 %
 \def\signame@TOM{\ifDS@english%
 {{{\SIGHead} Mathematical Modeling and Its Applications}}%
-\else {\SIGHead}\hskip12\JQ ”—ƒ‚ƒfƒ‹‰»‚Æ‰—p\fi}%
+\else {\SIGHead}\hskip12\JQ æ•°ç†ãƒ¢ãƒ‡ãƒ«åŒ–ã¨å¿œç”¨\fi}%
 %
 \def\signame@TOD{\ifDS@english%
 {{{\SIGHead} Databases}}%
-\else {\SIGHead}\hskip12\JQ ƒf[ƒ^ƒx[ƒX\fi}%
+\else {\SIGHead}\hskip12\JQ ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹\fi}%
 %
 \def\signame@CDS{\ifDS@english%
 {{{\SIGHead} Consumer Devices \& Systems}}%
@@ -1116,20 +1116,20 @@ Regular Paper%
 %%%
 \def\SHUBETUname@invited{\ifDS@english%
 Invited Paper%
-\else µ‘Ò˜_•¶\fi}
+\else æ‹›å¾…è«–æ–‡\fi}
 
 \def\SHUBETUname@sigrecommended{\ifDS@english%
 Recommended Paper%
-\else „‘E˜_•¶\fi}%
+\else æ¨è–¦è«–æ–‡\fi}%
 
 \def\SHUBETUname@technote{\ifDS@english%
 Technical Note%
-\else ƒeƒNƒjƒJƒ‹ƒm[ƒg\fi}%
+\else ãƒ†ã‚¯ãƒ‹ã‚«ãƒ«ãƒãƒ¼ãƒˆ\fi}%
 
 %%%<<<< 1.02
 \def\SHUBETUname@abstract{\ifDS@english%
 Abstract%
-\else ”­•\ŠT—v\fi}%
+\else ç™ºè¡¨æ¦‚è¦\fi}%
 
 
 \ifDS@english
@@ -1137,9 +1137,9 @@ Abstract%
 \newcommand{\COMSER}{Paper on Consumer Services}
 \newcommand{\COMSDV}{Paper on Consumer Devices}
 \else
-\newcommand{\COMSYS}{ƒRƒ“ƒVƒ…[ƒ}EƒVƒXƒeƒ€˜_•¶}
-\newcommand{\COMSER}{ƒRƒ“ƒVƒ…[ƒ}EƒT[ƒrƒX˜_•¶}
-\newcommand{\COMSDV}{ƒRƒ“ƒVƒ…[ƒ}EƒfƒoƒCƒX˜_•¶}
+\newcommand{\COMSYS}{ã‚³ãƒ³ã‚·ãƒ¥ãƒ¼ãƒãƒ»ã‚·ã‚¹ãƒ†ãƒ è«–æ–‡}
+\newcommand{\COMSER}{ã‚³ãƒ³ã‚·ãƒ¥ãƒ¼ãƒãƒ»ã‚µãƒ¼ãƒ“ã‚¹è«–æ–‡}
+\newcommand{\COMSDV}{ã‚³ãƒ³ã‚·ãƒ¥ãƒ¼ãƒãƒ»ãƒ‡ãƒã‚¤ã‚¹è«–æ–‡}
 \fi
 
 
@@ -1161,7 +1161,7 @@ Paper on Consumer Devices%
 
 \def\SHUBETUname@Research{\ifDS@english%
 Research Paper%
-\else Œ¤‹†˜_•¶\fi}
+\else ç ”ç©¶è«–æ–‡\fi}
 
 
 \def\SHUBETUname@Data{Database/Software Paper}
@@ -1703,10 +1703,10 @@ c}}}
 \newcounter{year} \c@year\m@ne
 				
 
-\expandafter\let\csname c@Šª”\endcsname\c@volume
-\expandafter\let\csname c@†”\endcsname\c@number
-\expandafter\let\csname c@Œ”\endcsname\c@month
-\expandafter\let\csname c@”N”\endcsname\c@year
+\expandafter\let\csname c@å·»æ•°\endcsname\c@volume
+\expandafter\let\csname c@å·æ•°\endcsname\c@number
+\expandafter\let\csname c@æœˆæ•°\endcsname\c@month
+\expandafter\let\csname c@å¹´æ•°\endcsname\c@year
 
 
 
@@ -2067,7 +2067,7 @@ Presently with\ %
  \else
   \footnotetext{%
 \def\\{\newline Presently with \ignorespaces}%
-Œ»İC\csname paffiliate@\the\count@\endcsname}%
+ç¾åœ¨ï¼Œ\csname paffiliate@\the\count@\endcsname}%
   \fi%
    \advance\count@\@ne
 }%
@@ -2504,22 +2504,22 @@ Presently with\ %
 \else
 %%
 \def\received#1#2#3{%
- \gdef\@received{ó•t“ú{#1}\kern0pt{”N}\kern0pt{#2}\kern0pt{Œ}\kern0pt{#3}\kern0pt{“ú}}%
+ \gdef\@received{å—ä»˜æ—¥{#1}\kern0pt{å¹´}\kern0pt{#2}\kern0pt{æœˆ}\kern0pt{#3}\kern0pt{æ—¥}}%
  \gdef\@ereceived{Received: \TUKI{#2} #3, #1}%
 }
 
 \def\accepted#1#2#3{%
-  \gdef\@accepted{Ì˜^“ú{#1}\kern0pt{”N}\kern0pt{#2}\kern0pt{Œ}\kern0pt{#3}\kern0pt{“ú}}%
+  \gdef\@accepted{æ¡éŒ²æ—¥{#1}\kern0pt{å¹´}\kern0pt{#2}\kern0pt{æœˆ}\kern0pt{#3}\kern0pt{æ—¥}}%
   \gdef\@eaccepted{Accepted: \TUKI{#2} #3, #1}%
 }
 
 \def\rereceived#1#2#3{%
- \gdef\@rereceived{CÄó•t“ú{#1}\kern0pt{”N}\kern0pt{#2}\kern0pt{Œ}\kern0pt{#3}\kern0pt{“ú}}%
+ \gdef\@rereceived{ï¼Œå†å—ä»˜æ—¥{#1}\kern0pt{å¹´}\kern0pt{#2}\kern0pt{æœˆ}\kern0pt{#3}\kern0pt{æ—¥}}%
  \gdef\@erereceived{, Revised: \TUKI{#2} #3, #1}%
 }
 
 \def\rerereceived#1#2#3{%
- \gdef\@rerereceived{\,/\,{#1}\kern0pt{”N}\kern0pt{#2}\kern0pt{Œ}\kern0pt{#3}\kern0pt{“ú}C}%
+ \gdef\@rerereceived{\,/\,{#1}\kern0pt{å¹´}\kern0pt{#2}\kern0pt{æœˆ}\kern0pt{#3}\kern0pt{æ—¥}ï¼Œ}%
  \gdef\@ererereceived{/\TUKI{#2} #3, #1,}%
 }
 \fi
@@ -2534,7 +2534,7 @@ Presently with\ %
 }
 \else
 \def\Presented#1#2#3{%
- \gdef\@Presented{{#1}\kern0pt{”N}\kern0pt{#2}\kern0pt{Œ}\kern0pt{#3}\kern0pt{“ú”­•\}}%
+ \gdef\@Presented{{#1}\kern0pt{å¹´}\kern0pt{#2}\kern0pt{æœˆ}\kern0pt{#3}\kern0pt{æ—¥ç™ºè¡¨}}%
  \gdef\@ePresented{Presented: \TUKI{#2} #3, #1}%
 }
 \fi
@@ -2555,11 +2555,11 @@ Presently with\ %
 
 
 \ifDS@english\else
-\let\ó•t\received
-\let\Ì˜^\accepted
-\let\Äó•t\rereceived
-\let\ÄÄó•t\rerereceived
-\let\”­•\\Presented
+\let\å—ä»˜\received
+\let\æ¡éŒ²\accepted
+\let\å†å—ä»˜\rereceived
+\let\å†å†å—ä»˜\rerereceived
+\let\ç™ºè¡¨\Presented
 \fi
 
 
@@ -2609,7 +2609,7 @@ Abstract:\hskip.5em%
    \ifDS@abstract
    {\hskip1zw}%
    \else
-{\textbf{ŠT—v}F}
+{\textbf{æ¦‚è¦}ï¼š}
    \fi
 }
 \fi
@@ -2688,7 +2688,7 @@ Keywords:\hskip.5em%
 Keywords:\hskip.5em%
 }
 \else
-\def\JKEYWORD{\textbf{ƒL[ƒ[ƒh}F}%
+\def\JKEYWORD{\textbf{ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰}ï¼š}%
 \fi
 
 
@@ -3464,8 +3464,8 @@ Keywords:\hskip.5em%
 \newcommand{\figurename}{Fig.}
 \newcommand{\tablename}{Table}
 \else
-\newcommand{\figurename}{}}
-\newcommand{\tablename}{•\}
+\newcommand{\figurename}{å›³}
+\newcommand{\tablename}{è¡¨}
 \fi
 
 
@@ -3829,7 +3829,7 @@ Keywords:\hskip.5em%
 \ifDS@english
 \newcommand{\refname}{References}
 \else
-\newcommand{\refname}{Ql•¶Œ£}
+\newcommand{\refname}{å‚è€ƒæ–‡çŒ®}
 \fi
 
 
@@ -3904,7 +3904,7 @@ Keywords:\hskip.5em%
 \ifDS@english
 \newcommand{\profname}{\relax}
 \else
-\newcommand{\profname}{’˜ÒĞ‰î}
+\newcommand{\profname}{è‘—è€…ç´¹ä»‹}
 \fi
 
 
@@ -4171,15 +4171,15 @@ Keywords:\hskip.5em%
 \@BreakMember%%
 %%%%%%%%%%%%%%
 \if #1m\relax
-   \hangindent30mm{\normalsize \inhibitgluei³‰ïˆõj}\else%
+   \hangindent30mm{\normalsize \inhibitglueï¼ˆæ­£ä¼šå“¡ï¼‰}\else%
 \if #1s\relax
-   \hangindent30mm{\normalsize \inhibitglueiŠw¶‰ïˆõj}\else%
+   \hangindent30mm{\normalsize \inhibitglueï¼ˆå­¦ç”Ÿä¼šå“¡ï¼‰}\else%
 \if #1f\relax
-   \hangindent30mm{\normalsize \inhibitglueiƒtƒFƒ[j}\else%
+   \hangindent30mm{\normalsize \inhibitglueï¼ˆãƒ•ã‚§ãƒ­ãƒ¼ï¼‰}\else%
 \if #1F\relax
-   \hangindent30mm{\normalsize \inhibitgluei³‰ïˆõCƒtƒFƒ[j}\else%
+   \hangindent30mm{\normalsize \inhibitglueï¼ˆæ­£ä¼šå“¡ï¼Œãƒ•ã‚§ãƒ­ãƒ¼ï¼‰}\else%
 \if #1h\relax
-   \hangindent30mm{\normalsize \inhibitgluei–¼—_‰ïˆõCƒtƒFƒ[j}\else%
+   \hangindent30mm{\normalsize \inhibitglueï¼ˆåèª‰ä¼šå“¡ï¼Œãƒ•ã‚§ãƒ­ãƒ¼ï¼‰}\else%
 \if #1n\relax
    \relax
   \else
@@ -4297,15 +4297,15 @@ Keywords:\hskip.5em%
 \@BreakMember%%
 %%%%%%%%%%%%%%
 \if #1m\relax
-   \hangindent30mm{\normalsize \inhibitgluei³‰ïˆõj}\else%
+   \hangindent30mm{\normalsize \inhibitglueï¼ˆæ­£ä¼šå“¡ï¼‰}\else%
 \if #1s\relax
-   \hangindent30mm{\normalsize \inhibitglueiŠw¶‰ïˆõj}\else%
+   \hangindent30mm{\normalsize \inhibitglueï¼ˆå­¦ç”Ÿä¼šå“¡ï¼‰}\else%
 \if #1f\relax
-   \hangindent30mm{\normalsize \inhibitglueiƒtƒFƒ[j}\else%
+   \hangindent30mm{\normalsize \inhibitglueï¼ˆãƒ•ã‚§ãƒ­ãƒ¼ï¼‰}\else%
 \if #1F\relax
-   \hangindent30mm{\normalsize \inhibitgluei³‰ïˆõCƒtƒFƒ[j}\else%
+   \hangindent30mm{\normalsize \inhibitglueï¼ˆæ­£ä¼šå“¡ï¼Œãƒ•ã‚§ãƒ­ãƒ¼ï¼‰}\else%
 \if #1h\relax
-   \hangindent30mm{\normalsize \inhibitgluei–¼—_‰ïˆõCƒtƒFƒ[j}\else%
+   \hangindent30mm{\normalsize \inhibitglueï¼ˆåèª‰ä¼šå“¡ï¼Œãƒ•ã‚§ãƒ­ãƒ¼ï¼‰}\else%
 \if #1n\relax
    \relax
   \else
@@ -4383,15 +4383,15 @@ Keywords:\hskip.5em%
 \@BreakMember%%
 %%%%%%%%%%%%%%
 \if #1m\relax
-     {\normalsize \inhibitgluei³‰ïˆõj}\else%
+     {\normalsize \inhibitglueï¼ˆæ­£ä¼šå“¡ï¼‰}\else%
 \if #1s\relax
-     {\normalsize \inhibitglueiŠw¶‰ïˆõj}\else%
+     {\normalsize \inhibitglueï¼ˆå­¦ç”Ÿä¼šå“¡ï¼‰}\else%
 \if #1f\relax
-     {\normalsize \inhibitglueiƒtƒFƒ[j}\else%
+     {\normalsize \inhibitglueï¼ˆãƒ•ã‚§ãƒ­ãƒ¼ï¼‰}\else%
 \if #1F\relax
-     {\normalsize \inhibitgluei³‰ïˆõCƒtƒFƒ[j}\else%
+     {\normalsize \inhibitglueï¼ˆæ­£ä¼šå“¡ï¼Œãƒ•ã‚§ãƒ­ãƒ¼ï¼‰}\else%
 \if #1h\relax
-     {\normalsize \inhibitgluei–¼—_‰ïˆõCƒtƒFƒ[j}\else%
+     {\normalsize \inhibitglueï¼ˆåèª‰ä¼šå“¡ï¼Œãƒ•ã‚§ãƒ­ãƒ¼ï¼‰}\else%
 \if #1n\relax
    \relax
   \else
@@ -4607,7 +4607,7 @@ Keywords:\hskip.5em%
 
 \def\Ediname@DAM{\ifDS@english%
 {Editor in Charge:}
-\else {’S“–•ÒWˆÏˆõ}
+\else {æ‹…å½“ç·¨é›†å§”å“¡}
 \fi}%%
 
 \def\Ediname@TBIO{Communicated by}
@@ -4646,14 +4646,14 @@ Keywords:\hskip.5em%
 \fi
 \else
 \noindent
-\hfill \<i{\Edifont{\Ediname}}%%j
+\hfill \<ï¼ˆ{\Edifont{\Ediname}}%%ï¼‰
 \fi
 %%
 \ifDS@english
 \hskip.5em%
 \textit{#1})\else
 \hskip1\zw%
-#1j\fi
+#1ï¼‰\fi
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -4665,7 +4665,7 @@ Keywords:\hskip.5em%
 
 
 \newcommand\appendixname{%
-\ifDS@english Appendix\else \protect\kintou{5zw}{•t˜^}\fi}
+\ifDS@english Appendix\else \protect\kintou{5zw}{ä»˜éŒ²}\fi}
 
 
 
@@ -4925,12 +4925,12 @@ Keywords:\hskip.5em%
 \def\n@urlj[#1]#2{%
 \normalfont 
 \if #11\relax
-“üèæ\\ \else%
+å…¥æ‰‹å…ˆ\\ \else%
 \fi
 \normalfont $\langle$\nobreak{#2}\nobreak$\rangle$}
 
 \def\@urlj#1{%
-\normalfont “üèæ$\langle$\nobreak{#1}\nobreak$\rangle$}
+\normalfont å…¥æ‰‹å…ˆ$\langle$\nobreak{#1}\nobreak$\rangle$}
 
 
 \def\urle{%
@@ -4956,7 +4956,7 @@ $\langle$\nobreak{#2}\nobreak$\rangle$}
 
 
 
-\def\refdatej#1{\normalfont iQÆ{#1}j\<}
+\def\refdatej#1{\normalfont ï¼ˆå‚ç…§{#1}ï¼‰\<}
 \def\refdatee#1{\normalfont (accessed {#1})}
 
 \def\doi#1{\normalfont DOI: #1}
@@ -4971,7 +4971,7 @@ $\langle$\nobreak{#2}\nobreak$\rangle$}
 \ifDS@english
    \noindent{\bfseries{Editor's Recommendation}}\par
 \else
-   \noindent{\bfseries{„‘E•¶}}\par%
+   \noindent{\bfseries{æ¨è–¦æ–‡}}\par%
 \fi
 }{\par}%\vskip\baselineskip
 
@@ -4984,7 +4984,7 @@ $\langle$\nobreak{#2}\nobreak$\rangle$}
    {\bfseries{Acknowledgments}}%
 \hskip1em\ignorespaces%
 \else
-   {\bfseries{Ó«}}%
+   {\bfseries{è¬è¾}}%
 \hskip1\zw\ignorespaces%
 \fi}
 
@@ -5369,70 +5369,70 @@ $\langle$\nobreak{#2}\nobreak$\rangle$}
 \prebreakpenalty`\}=\@M
 \postbreakpenalty`\{=\@M
 
-\prebreakpenalty`E=\@M
-\prebreakpenalty`F=\@M
-\prebreakpenalty`G=\@M
-\prebreakpenalty`H=\@M
-\prebreakpenalty`I=\@M
+\prebreakpenalty`ãƒ»=\@M
+\prebreakpenalty`ï¼š=\@M
+\prebreakpenalty`ï¼›=\@M
+\prebreakpenalty`ï¼Ÿ=\@M
+\prebreakpenalty`ï¼=\@M
 
-\prebreakpenalty\jis"212D=\@M		% L
-\postbreakpenalty\jis"212E=\@M		% M
-\postbreakpenalty\jis"2146=\@M		% e
-\prebreakpenalty\jis"2147=\@M		% f
-\postbreakpenalty\jis"2148=\@M		% g
-\prebreakpenalty\jis"2149=\@M		% h
+\prebreakpenalty\jis"212D=\@M		% Â´
+\postbreakpenalty\jis"212E=\@M		% ï½€
+\postbreakpenalty\jis"2146=\@M		% â€˜
+\prebreakpenalty\jis"2147=\@M		% â€™
+\postbreakpenalty\jis"2148=\@M		% â€œ
+\prebreakpenalty\jis"2149=\@M		% â€
 
-\prebreakpenalty`j=\@M
-\postbreakpenalty`i=\@M
-\prebreakpenalty`p=\@M
-\postbreakpenalty`o=\@M
-\prebreakpenalty`n=\@M
-\postbreakpenalty`m=\@M
-\postbreakpenalty`e=\@M
-\prebreakpenalty`f=\@M
+\prebreakpenalty`ï¼‰=\@M
+\postbreakpenalty`ï¼ˆ=\@M
+\prebreakpenalty`ï½=\@M
+\postbreakpenalty`ï½›=\@M
+\prebreakpenalty`ï¼½=\@M
+\postbreakpenalty`ï¼»=\@M
+\postbreakpenalty`â€˜=\@M
+\prebreakpenalty`â€™=\@M
 
-\postbreakpenalty\jis"214C=\@M		%k
-\prebreakpenalty\jis"214D=\@M		% l
-\postbreakpenalty\jis"2152=\@M		% q
-\prebreakpenalty\jis"2153=\@M		% r
-\postbreakpenalty\jis"2154=\@M		% s
-\prebreakpenalty\jis"2155=\@M		% t
-\postbreakpenalty\jis"2156=\@M		% u
-\prebreakpenalty\jis"2157=\@M		% v
-\postbreakpenalty\jis"2158=\@M		% w
-\prebreakpenalty\jis"2159=\@M		% x
-\postbreakpenalty\jis"215A=\@M		% y
-\prebreakpenalty\jis"215B=\@M		% z
+\postbreakpenalty\jis"214C=\@M		%ã€”
+\prebreakpenalty\jis"214D=\@M		% ã€•
+\postbreakpenalty\jis"2152=\@M		% ã€ˆ
+\prebreakpenalty\jis"2153=\@M		% ã€‰
+\postbreakpenalty\jis"2154=\@M		% ã€Š
+\prebreakpenalty\jis"2155=\@M		% ã€‹
+\postbreakpenalty\jis"2156=\@M		% ã€Œ
+\prebreakpenalty\jis"2157=\@M		% ã€
+\postbreakpenalty\jis"2158=\@M		% ã€
+\prebreakpenalty\jis"2159=\@M		% ã€
+\postbreakpenalty\jis"215A=\@M		% ã€
+\prebreakpenalty\jis"215B=\@M		% ã€‘
 
-\prebreakpenalty`[=\@M						% 2.12(6)
-\prebreakpenalty``=\@M						% 2.12(6)
+\prebreakpenalty`ãƒ¼=\@M						% 2.12(6)
+\prebreakpenalty`ã€œ=\@M						% 2.12(6)
 
-\prebreakpenalty`‚Ÿ=\@M
-\prebreakpenalty`‚¡=\@M
-\prebreakpenalty`‚£=\@M
-\prebreakpenalty`‚¥=\@M
-\prebreakpenalty`‚§=\@M
-\prebreakpenalty`‚Á=\@M
-\prebreakpenalty`‚á=\@M
-\prebreakpenalty`‚ã=\@M
-\prebreakpenalty`‚å=\@M
-\prebreakpenalty\jis"246E=\@M		% ‚ì
-\prebreakpenalty`ƒ@=\@M
-\prebreakpenalty`ƒB=\@M
-\prebreakpenalty`ƒD=\@M
-\prebreakpenalty`ƒF=\@M
-\prebreakpenalty`ƒH=\@M
-\prebreakpenalty`ƒb=\@M
-\prebreakpenalty`ƒƒ=\@M
-\prebreakpenalty`ƒ…=\@M
-\prebreakpenalty`ƒ‡=\@M
-\prebreakpenalty\jis"256E=\@M		% ƒ
-\prebreakpenalty\jis"2575=\@M		% ƒ•
-\prebreakpenalty\jis"2576=\@M		% ƒ–
+\prebreakpenalty`ã=\@M
+\prebreakpenalty`ãƒ=\@M
+\prebreakpenalty`ã…=\@M
+\prebreakpenalty`ã‡=\@M
+\prebreakpenalty`ã‰=\@M
+\prebreakpenalty`ã£=\@M
+\prebreakpenalty`ã‚ƒ=\@M
+\prebreakpenalty`ã‚…=\@M
+\prebreakpenalty`ã‚‡=\@M
+\prebreakpenalty\jis"246E=\@M		% ã‚
+\prebreakpenalty`ã‚¡=\@M
+\prebreakpenalty`ã‚£=\@M
+\prebreakpenalty`ã‚¥=\@M
+\prebreakpenalty`ã‚§=\@M
+\prebreakpenalty`ã‚©=\@M
+\prebreakpenalty`ãƒƒ=\@M
+\prebreakpenalty`ãƒ£=\@M
+\prebreakpenalty`ãƒ¥=\@M
+\prebreakpenalty`ãƒ§=\@M
+\prebreakpenalty\jis"256E=\@M		% ãƒ®
+\prebreakpenalty\jis"2575=\@M		% ãƒµ
+\prebreakpenalty\jis"2576=\@M		% ãƒ¶
 \fi
 
 
-\def\F{\makebox[1zw][l]{F}}
+\def\ï¼š{\makebox[1zw][l]{ï¼š}}
 
 
 
