@@ -7,9 +7,10 @@
 %%
 
 %\documentclass[submit,techreq]{ipsj}
-\documentclass[submit,techreq,noauthor]{ipsj}
+\documentclass[submit,techreq,jkeyword,noauthor]{ipsj}
 
-\usepackage[dvips]{graphicx}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{bmpsize}
 \usepackage{latexsym}
 
 \def\Underline{\setbox0\hbox\bgroup\let\\\endUnderline}
@@ -17,9 +18,16 @@
 \def\|{\verb|}
 
 \newcommand{\TED}{\textrm{TED}}
+\newcommand{\TEDMED}{\textrm{TEDMED}}
 \newcommand{\TEDx}{\TED${}^{\textrm{x}}$}
 \newcommand{\TEDxTokyo}{\TEDx\textrm{Tokyo}}
 \newcommand{\TEDxKyoto}{\TEDx\textrm{Kyoto}}
+\newcommand{\TEDxParis}{\TEDx\textrm{Paris}}
+\newcommand{\TEDxAlcatraz}{\TEDx\textrm{Alcatraz}}
+
+\newcommand{\TEDtitle}{\textbf{TED}}
+\newcommand{\TEDxtitle}{\TEDtitle${}^{\textbf{x}}$}
+\newcommand{\TEDxKyototitle}{\TEDxtitle\textbf{Kyoto}}
 
 \setcounter{巻数}{0}%vol53=2012
 \setcounter{号数}{0}
@@ -81,15 +89,23 @@ Kyoto University of Foreign Studies, Kyoto 615-8558, Japan}
 % 王立協会 
 
 本報告は，特に近年のサイエンス，テクノロジー分野の知見を一般に共有するための手段を，
-その目的において成功しつつある \TED カンファレンスおよび \TEDx カンファレンスを内側から俯瞰することで，
-共有しようとするものである．
+その目的において成功しつつある \TED\ (Technology, Entertainment, Design) カンファレンス
+および \TEDx カンファレンスを内側から俯瞰することで，共有しようとするものである．
 
+% また，本稿では \TED カンファレンス創設者が近年取り組んでいる555カンファレンスに関しても紹介する．
 
-\section{TEDカンファレンスの取り組み}
+\section{\TEDtitle カンファレンスの取り組み}
+
+建築家リチャード・ソウル・ワーマンは1976年に「情報アーキテクチャ」という言葉を作り，
+情報における「アーキテクチャ」の必要性を訴えた．\cite{rsw}
+ワーマンは後に \TED カンファレンスを設立することで最もよく知られている．
+\TED カンファレンスは，元々はテクノロジー，デザインに関する先進的な話題を，
+社会的影響力を持つ少人数のグループで共有するためのカンファレンスであったが，
+そのカンファレンスのデザインは現在ではアイディアを共有する手段として優れたものと認識されている．
 
 \subsection{カンファレンスのデザイン}
 
-リチャード・ソール・ワーマンは当時非公開であった \TED カンファレンスを1984年に設立するにあたって，
+ワーマンは当時非公開であった \TED カンファレンスを1984年に設立するにあたって，
 以下のルールを設けた．
 \begin{itemize}
 \item 1回の講演のトピックはひとつだけに制限される．
@@ -129,22 +145,30 @@ effect. It brings discipline.
 光学的に重畳することになるが，これは複数スクリーンに対応せず，
 また後に述べるビデオアーカイブにもポインタ軌跡を残すことが困難であるため推奨されない．
 
-導入，関連研究，原理，実験方法，実験結果，考察，結言と言った理工系論文に見られる章立ては用いられない．
-あえて理工系論文の章立てに当てはめると，\TED で行われる講演は導入部のみである．
+% 導入，関連研究，原理，実験方法，実験結果，考察，結言と言った理工系論文に見られる章立ては用いられない．
+% あえて理工系論文の章立てに当てはめると，\TED で行われる講演は導入部のみである．
+
+\TED カンファレンスは，より広くアイディアを共有するために，次に述べるビデオアーカイブの公開と，
+\TEDx と呼ばれるイベント開催ライセンスの発行を行っている．
 
 \subsection{ビデオアーカイブ}
 
-\TED カンファレンスは2006年から講演のビデオアーカイブをクリエイティブ・コモンズ (CC-BY-NC-ND) ライセンス
-下で無償公開している．（一部の動画はダブルライセンスによる公開を行っている．）
+\TED カンファレンスは2006年から「よいアイデアを広めよう (ideas worth spreading)」をスローガンに，
+講演のビデオアーカイブをクリエイティブ・コモンズ (CC-BY-NC-ND) ライセンス下で無償公開している．
+一部の動画はダブルライセンスによる公開を行っている．
 
-ビデオアーカイブ公開の目的はアイディアの共有であるが，それが \TED ビデオであることを示す様々な工夫が
-盛り込まれている．
+\TED ビデオアーカイブは，それが \TED によって制作されたことを示す様々な工夫が盛り込まれている．
 
 講演者は丸い赤絨毯の上に立つ．赤絨毯のサイズは直径2.5[m]から5[m]程度まで毎回異なる．
-赤絨毯は講演者の移動範囲を制限し，それによって照明およびカメラの照準を決めやすくしている．
+丸い赤絨毯は視聴者の視覚的な鍵になると同時に，講演者の移動範囲を制限し，
+それによって照明およびカメラの照準を決めやすくしている．
+
+ステージには高さが1[m]程度の \TED ロゴが置かれる．
+このロゴによって，ビデオアーカイブが確かに \TED によって撮影，編集されたものであることを示すと共に，
+類似するカンファレンスとの識別をしやすくしている．
 
 カメラは前方4台，後方1台の合計5台を用いることが多く，前方の1台はクレーン，レールを用いることが多い．
-これは一般的な講演の撮影と，音楽コンサートの撮影の中間程度の設備である．
+これは一般的な講演の撮影とことなり，小規模な音楽コンサートの撮影に相当する設備である．
 
 また \TED ビデオの特徴として，客席に青い照明をあてることがあげられる．
 講演者の赤絨毯とのカラーのコントラストもあるが，青い照明で客席の照度を上げつつ，
@@ -153,23 +177,140 @@ effect. It brings discipline.
 ビデオアーカイブを見ると聴講者の表情を読み取ることが出来，
 聴講者もまたカンファレンスの一部であることがビデオを通して伝わる．
 
-講演者が18分を超える講演を行った場合でも，ビデオアーカイブは18分に制限される．
-
+講演者が意図せず18分を超える講演を行った場合でも，ビデオアーカイブは18分に制限される．
+これは前節で述べた理由による．
 
 % Non commercial
 
-\subsection{TEDx}
+\subsection{\TEDxtitle}
+
+\TEDx とは，\TED の「よいアイデアを広めよう (ideas worth spreading)」の精神に基づいて世界各地で
+独自に運営されているプログラムである．右肩の「x」は独自に運営されている (independently organized) こと
+を示している．
 
 \TED カンファレンスが2009年にパトリック・ニューウェル (Patrick Newel) とトッド・
-ポーター (Tod Porter) に independently organized TED event と
-しての \TEDxTokyo ライセンスを与えたのが \TEDx イベントの始まりである．
+ポーター (Tod Porter) に independently organized TED event としての \TEDxTokyo ライセンスを
+与えたのが \TEDx イベントの始まりである．
 
-\TEDx ライセンス保持者は \TED カンファレンスが提示する \TEDx ライセンスに従わねばならない． \TEDx ライセンスは1年間
-有効で，授与，更新，譲渡の可否の判断は \TED カンファレンスに委ねられる．
+\TEDx ライセンス保持者は \TED カンファレンスが提示する \TEDx ライセンス\cite{tedxrules}に
+従わねばならない．
+\TEDx ライセンスは1年間有効で，授与，更新，譲渡の可否の判断は \TED カンファレンスに委ねられる．
+\TEDx イベントは完全に非営利でなければならず，イベント運営者および講演者はボランティアで活動する．
+企業ブースの設置など非常に限定的な商利用が \TEDx イベントには認められる．
+
+\TEDx イベントの運営は概ね \TED カンファレンスに準拠したものとなっているが，規模に関する厳しい制約がある．
+\TEDx ライセンス保持者が \TED カンファレンスに参加したことがない場合，
+イベント参加者数はボランティア運営者を含めて100名に制限される．
+
+また，原則として講演の 25\% は前述の \TED ビデオアーカイブの上映でなければならい．
+
+\TEDx イベントでの講演は開催後1ヶ月以内にビデオアーカイブを公開することが義務付けられている．
+これらのビデオアーカイブは \TED 同様クリエイティブ・コモンズ (CC-BY-NC-ND) ライセンスで公開される．
+
+2013年3月の時点で，平均して1日あたり5件の \TEDx イベントが開催されており，
+開催国数は133に達している．\cite{nh,mf}
+
+2014年7月の時点で，30,000点を超えるビデオアーカイブが公開されている．
+\TEDx ビデオアーカイブのうち，優れた講演は \TED キュレータによって選別され \TED ブログに転載される．
+特に優れた講演は \TED キュレータによって再編集され \TED ビデオアーカイブとして公開される．\cite{tedxtalksweb}
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=7cm,clip]{tom_chi.png}
+\end{center}
+\caption{トム・チー (Tom Chi) による Google X の取り組みの紹介\\
+（出典: \TEDxKyoto ）}
+\label{fig:tomchi}
+\end{figure}
+
+\subsection{\TEDxKyototitle の取り組み}
+
+\TEDxKyoto はジェイ・クラパーキと近藤淳也によって2011年に設立された，京都に拠点を置く \TEDx イベント
+運営団体である．\figref{fig:tomchi}に \TEDxKyoto におけるトム・チー (Tom Chi) による講演の様子を示す．
+
+\TEDxKyoto は2012年の最初のイベントから，ワーマンの \TED ルールに加えて講演に関するいくつかの
+独自ルールを加えている．特に重要なものを次に挙げる．
+\begin{itemize}
+\item 講演者は事前（通常1ヶ月前）に発表用スライド，スクリプトの提出を求められる．
+\item 専属のコーチが発表内容，発表技術に関するアドバイスを行う．
+\item スライドは主催者によって再デザインされる．
+\item 登壇前にリハーサルを行う．
+\end{itemize}
+これらのルールは，主に \TEDxTokyo, \TEDxParis, \TEDxAlcatraz  （サンフランシスコ）の
+経験に基づくものである．
+
+上述のルールを遵守することで，\TEDxKyoto の講演は高い質を保っており，高い評価を得ている．\cite{ml}
+
+2014年6月4日に行われた \TEDxKyoto\ Special Event ``To Boldly Go!'' における
+ジョージ・タケイ (George Takei) の講演 ``Power of Pride'' は2014年7月4日に \TED ビデオアーカイブとして
+公開された．
+
+\subsection{555カンファレンス}
+
+% TEDMED, WWW
+
+ワーマンは1998年に医療系に特化した \TED カンファレンスである \TEDMED カンファレンスを設立し，
+また \TED ルールに縛られないが \TED と趣旨の近いカンファレンスEGを2006年に設立している．
+また2012年にWWWカンファレンスを開催している．WWWカンファレンスでは極めて興味深い挑戦を行っている．
+ワーマンはWWWカンファレンス開催にあたって以下のように呼びかけている．\cite{wwwweb}
+
+\begin{quote}
+Richard Saul Wurman, creator of the TED (1984-2002), TEDMED (1995-2010) and the eg 
+conferences (2006), will celebrate improvised conversation in its most informative manner.
+
+No presentations
+
+No schedule
+
+Simply pairings of amazingly interesting individuals prompted by a question, generating a 
+conversation. For 10 minutes to 50 minutes. And so it will go – conversations interlaced 
+with threads of improvised music. An astrophysicist and a microbiologist. An actor and a 
+playwright. A jazz musician and a classical one. An energetic exploration of the lost art 
+of conversing.
+
+Extraordinary individuals,
+minds and musicians in improvised discourse
+
+A live performance
+
+A tablet app
+
+The most innovative moments, the sparks of ideas, and fundamental truths come from 
+conversations between two individuals.
+In the future, the truth will be our most valuable commodity. It is fitting that truth, 
+a commodity that we most value and desire, is amazingly scarce.
+
+If among all the buttons on your remote control there was one button called truth, 
+wouldn't you push that button?
+
+WWW is designed to metaphorically provide such a button and create a setting that 
+will allow truth to be revealed.	
+\end{quote}
+
+180名が参加したWWWカンファレンスは意図したとおりに機能したが，ワーマンは後にこれが冒険であったことを
+認めている．\cite{ek}
+
+\begin{quote}
+I was terrified. I wasn't sure it was going to work at all. And then it worked better 
+than I thought. So that was a surprise. But it was scary.
+\end{quote}
+
+% 555
+
+ワーマンは2014年に555カンファレンスを立ち上げている．
+これは，世界の5都市で並行して開催される．
+各都市では5人の専門家が5週連続して月曜日に講演を行う．
+各月曜日の講演に続いて，小規模なミーティングが火曜日に持たれる．
+月曜日の講演に関して明確なルールは与えられない．
+講演者はワーマンによって予定されているWWW2カンファレンスに参加することになっている．\cite{ek}
+
+% 5都市，5人のエキスパート，5週連続
 
 
 
+% \subsection{TEDxライクなイベント}
 
+% エンタテイメント
 
 \section{おわりに}
 
@@ -205,6 +346,39 @@ Camine Gallo: \textit{The Science Behind TED's 18-Minute Rule;}
 \bibitem{historyofted}
 TED: \textit{History of TED (online);}
 \urle{https://www.ted.com/about/our-organization/history-of-ted} (2014-07-21).
+
+\bibitem{tedxrules}
+TED: \textit{TEDx rules;}
+\urle{http://www.ted.com/participate/organize-a-local-tedx-event/before-you-start/tedx-rules}
+(2014-07-21).
+
+\bibitem{nh}
+Nathan Heller: \textit{Listen and Learn;}
+The New Yorker, 9 July 2012.
+
+\bibitem{mf}
+Mark Fidelman: \textit{Here's Why TED and TEDx are So Incredibly Appealing;}
+Forbes, 19 June 2012.
+
+\bibitem{tedxtalksweb}
+TED: \textit{TEDx talks;}
+\urle{http://tedxtalks.ted.com}
+(2014-07-21).
+
+\bibitem{ml}
+Michael Lambe: \textit{To Boldly Go – TEDxKyoto x George Takei \& Patrick Linehan;}
+Deep Kyoto, 4 June 2014,
+\urle{http://www.deepkyoto.com/?p=10238} (2014-07-21).
+
+\bibitem{wwwweb}
+Richard Saul Wurman: \textit{WWW conference;}
+\urle{http://www.thewwwconference.com/pages/www.html} (2014-07-21).
+
+\bibitem{ek}
+Emi Kolawole: \textit{555 Conference: TED creator Richard Saul Wurman discusses his latest gathering;}
+The Washington Post, 30 July 2013,
+\urle{http://wapo.st/1645gEj}
+(2014-07-21).
 
 \end{thebibliography}
 
